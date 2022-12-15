@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background: radial-gradient(#FFF, #EEE);
+    background-position: center;
+    background-image: url('/img/bg.jpg');
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.tbg {
+    background-color: rgba(255, 255, 255, 0.3);
+}
