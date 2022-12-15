@@ -2,10 +2,13 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
-    background: radial-gradient(#FFF, #EEE);
     background-position: center;
-    background-image: url('/img/bg.jpg');
     background-size: cover;
+    background:
+        radial-gradient(ellipse at 50% 50%,
+            rgba(255, 255, 255, 0) 25%,
+            rgba(255, 255, 255, 1) 100%),
+        url('/img/bg.jpg');
     width: 100vw;
     height: 100vh;
     overflow: hidden;
