@@ -1,0 +1,1357 @@
+[2025-10-22 20:10:38] [class-ss-archive-creation-job.php:119] Starting a job; no job is presently running
+[2025-10-22 20:10:38] [class-ss-archive-creation-job.php:120] Here's our task list: setup, fetch_urls, generate_404, create_zip_archive, wrapup
+[2025-10-22 20:10:38] [class-ss-archive-creation-job.php:138] Pushing first task to queue: setup
+[2025-10-22 20:10:38] [class-ss-archive-creation-job.php:194] Current task: setup
+[2025-10-22 20:10:38] [class-ss-archive-creation-job.php:208] Performing task: setup
+[2025-10-22 20:10:38] [class-ss-task.php:44] Status message: [setup] Setting up
+[2025-10-22 20:10:38] [class-ss-setup-task.php:33] Creating archive directory: /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/
+[2025-10-22 20:10:38] [class-ss-setup-task.php:72] Adding origin URL to queue: http://localhost/
+[2025-10-22 20:10:38] [class-ss-archive-creation-job.php:233] We've found our next task: fetch_urls
+[2025-10-22 20:10:38] [class-ss-archive-creation-job.php:194] Current task: fetch_urls
+[2025-10-22 20:10:38] [class-ss-archive-creation-job.php:208] Performing task: fetch_urls
+[2025-10-22 20:10:38] [class-ss-fetch-urls-task.php:69] Total pages: 1; Pages remaining: 1
+[2025-10-22 20:10:38] [class-ss-fetch-urls-task.php:73] URL: http://localhost/
+[2025-10-22 20:10:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 1
+[2025-10-22 20:10:38] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a3ed91e2-Wr6dxD.tmp
+[2025-10-22 20:10:38] [class-ss-url-fetcher.php:101] URL: http://localhost/ - Is local asset: No
+[2025-10-22 20:10:38] [class-ss-page-handler.php:53] URL Prepared:http://localhost/?simply_static_page=1183
+[2025-10-22 20:10:38] [class-ss-url-fetcher.php:307] Fetching URL: http://localhost/?simply_static_page=1183
+[2025-10-22 20:10:38] [class-ss-url-fetcher.php:146] Filesize: 147827 bytes
+[2025-10-22 20:10:38] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-10-22 20:10:38] [class-ss-url-fetcher.php:289] New filename for static page: index.html
+[2025-10-22 20:10:38] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a3ed91e2-Wr6dxD.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/index.html
+[2025-10-22 20:10:39] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:39] [class-ss-fetch-urls-task.php:159] Adding 77 URLs to the queue
+[2025-10-22 20:10:41] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:41] [class-ss-page.php:128] Checking Content Identical:2c8c3bc922c65e995c8f8348a8bc2ee668c7c3ad===. Value: FALSE
+[2025-10-22 20:10:41] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 1 pages/files
+[2025-10-22 20:10:42] [class-ss-archive-creation-job.php:241] We're not done with the fetch_urls task yet
+[2025-10-22 20:10:42] [class-ss-archive-creation-job.php:194] Current task: fetch_urls
+[2025-10-22 20:10:42] [class-ss-archive-creation-job.php:208] Performing task: fetch_urls
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:69] Total pages: 77; Pages remaining: 76
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-includes/js/jquery/jquery.min.js
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:50; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4209dd1-sZhQzJ.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-includes/js/jquery/jquery.min.js - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-includes/js/jquery/jquery.min.js?simply_static_page=1184
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-includes/js/jquery/jquery.min.js - Full file path: /var/www/html/wp-includes/js/jquery/jquery.min.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-includes/js/jquery/jquery.min.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 87553 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: application/javascript
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-includes/js/jquery/jquery.min.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4209dd1-sZhQzJ.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-includes/js/jquery/jquery.min.js
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:79cd3587d565afe290076a8d36c31c305a573d18===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-includes/js/jquery/jquery-migrate.min.js
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:49; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4217d06-dtYGFE.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-includes/js/jquery/jquery-migrate.min.js - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=1185
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-includes/js/jquery/jquery-migrate.min.js - Full file path: /var/www/html/wp-includes/js/jquery/jquery-migrate.min.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-includes/js/jquery/jquery-migrate.min.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 13577 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: application/javascript
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-includes/js/jquery/jquery-migrate.min.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4217d06-dtYGFE.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-includes/js/jquery/jquery-migrate.min.js
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:3ad0c10e501ac2a9bfa18f9cd7e700219b378738===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/js/aos.js
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:48; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4229691-Faf75z.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/js/aos.js - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/js/aos.js?simply_static_page=1186
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/js/aos.js - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/js/aos.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/js/aos.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 20491 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: application/javascript
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/js/aos.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4229691-Faf75z.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/js/aos.js
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:9619975c66e4a460ec35fe0349c2ec24fedeee17===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/js/saaslauncher-scripts.js
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:47; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a423aef9-GR8LNR.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/js/saaslauncher-scripts.js - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/js/saaslauncher-scripts.js?simply_static_page=1187
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/js/saaslauncher-scripts.js - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/js/saaslauncher-scripts.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/js/saaslauncher-scripts.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 5155 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: application/javascript
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/js/saaslauncher-scripts.js
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a423aef9-GR8LNR.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/js/saaslauncher-scripts.js
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:ed371bc11b5bbce8eda00dc91c93b4273dab0446===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:46; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4248151-HzGNV3.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large.png?simply_static_page=1188
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/uploads/2025/09/logotype_darkbg_trans_large.png - Full file path: /var/www/html/wp-content/uploads/2025/09/logotype_darkbg_trans_large.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/uploads/2025/09/logotype_darkbg_trans_large.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 23340 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/uploads/2025/09/logotype_darkbg_trans_large.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4248151-HzGNV3.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/uploads/2025/09/logotype_darkbg_trans_large.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:9e1838abd0730366ee48d11c5f22db882a01ac20===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large-300x76.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:45; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a425a99f-QUjpNB.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large-300x76.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large-300x76.png?simply_static_page=1189
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/uploads/2025/09/logotype_darkbg_trans_large-300x76.png - Full file path: /var/www/html/wp-content/uploads/2025/09/logotype_darkbg_trans_large-300x76.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/uploads/2025/09/logotype_darkbg_trans_large-300x76.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 4497 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/uploads/2025/09/logotype_darkbg_trans_large-300x76.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a425a99f-QUjpNB.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/uploads/2025/09/logotype_darkbg_trans_large-300x76.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:634132f97f60e1756d7495fb380bc91849341cfb===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large-1024x259.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:44; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a426ba50-ngGtjp.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large-1024x259.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large-1024x259.png?simply_static_page=1190
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/uploads/2025/09/logotype_darkbg_trans_large-1024x259.png - Full file path: /var/www/html/wp-content/uploads/2025/09/logotype_darkbg_trans_large-1024x259.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/uploads/2025/09/logotype_darkbg_trans_large-1024x259.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 15117 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/uploads/2025/09/logotype_darkbg_trans_large-1024x259.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a426ba50-ngGtjp.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/uploads/2025/09/logotype_darkbg_trans_large-1024x259.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:fd568b803d21a8d9f59b8c91981891d7b040a431===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large-768x194.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:43; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4278314-4xuyTW.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large-768x194.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/uploads/2025/09/logotype_darkbg_trans_large-768x194.png?simply_static_page=1191
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/uploads/2025/09/logotype_darkbg_trans_large-768x194.png - Full file path: /var/www/html/wp-content/uploads/2025/09/logotype_darkbg_trans_large-768x194.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/uploads/2025/09/logotype_darkbg_trans_large-768x194.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 11109 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/uploads/2025/09/logotype_darkbg_trans_large-768x194.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4278314-4xuyTW.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/uploads/2025/09/logotype_darkbg_trans_large-768x194.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:ddb6b6d7f67940540b2afa38a665887ac254786d===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/launcher-dash.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:42; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4287d11-1aRzRR.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/launcher-dash.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/launcher-dash.png?simply_static_page=1192
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/launcher-dash.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/launcher-dash.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/launcher-dash.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 30344 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/launcher-dash.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4287d11-1aRzRR.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/launcher-dash.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:823bf875812ab8b5c342710dc79a125037cfc8c6===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_1.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:41; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4297142-mp0djP.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_1.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/logo_1.png?simply_static_page=1193
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/logo_1.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_1.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_1.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 4508 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/logo_1.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4297142-mp0djP.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/logo_1.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:0b19d4b408d4e912971c1476c9bb134e50ca6f30===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_2.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:40; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a42a3666-PArlvl.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_2.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/logo_2.png?simply_static_page=1194
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/logo_2.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_2.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_2.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 2321 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/logo_2.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a42a3666-PArlvl.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/logo_2.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:148ba0a88ee701039256d5cfba26ec6b1302b1e8===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_3.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:39; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a42b41c1-RKNEe8.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_3.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/logo_3.png?simply_static_page=1195
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/logo_3.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_3.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_3.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 2265 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/logo_3.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a42b41c1-RKNEe8.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/logo_3.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:8cb3e684a610309ffce6bbbefa78e809df0a6609===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_4.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:38; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a42c3881-wYDOnI.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_4.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/logo_4.png?simply_static_page=1196
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/logo_4.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_4.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_4.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 4636 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/logo_4.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a42c3881-wYDOnI.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/logo_4.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:779bd8a65e04893e32bb09f207f300a5bb3d290a===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_5.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:37; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a42d056b-6sdg6J.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_5.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/logo_5.png?simply_static_page=1197
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/logo_5.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_5.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_5.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 2169 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/logo_5.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a42d056b-6sdg6J.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/logo_5.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:fc50f848f345f816c41c67e8cab9eabbfff10f13===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_6.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:36; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a42e1226-nl5JkM.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/logo_6.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/logo_6.png?simply_static_page=1198
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/logo_6.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_6.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/logo_6.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 2909 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/logo_6.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a42e1226-nl5JkM.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/logo_6.png
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:42] [class-ss-page.php:128] Checking Content Identical:1b1a19df3bff18eaffcd5d19189052988993f316===. Value: FALSE
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_101.png
+[2025-10-22 20:10:42] [class-ss-task.php:58] [PAGES STATUS] Remaining:35; Total: 77
+[2025-10-22 20:10:42] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a42eff33-OG1eaC.tmp
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_101.png - Is local asset: Yes
+[2025-10-22 20:10:42] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/icon_101.png?simply_static_page=1199
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/icon_101.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_101.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_101.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:146] Filesize: 1394 bytes
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/icon_101.png
+[2025-10-22 20:10:42] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a42eff33-OG1eaC.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/icon_101.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:82ec02cd954d5569bec32f7be47fad5382f29c18===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_102.png
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:34; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4309726-ZJu2hs.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_102.png - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/icon_102.png?simply_static_page=1200
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/icon_102.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_102.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_102.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 1461 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/icon_102.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4309726-ZJu2hs.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/icon_102.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:1402004cd4d9cd2fdf53b3be0df99e65d29b765a===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_103.png
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:33; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a431973b-05yUsJ.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_103.png - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/icon_103.png?simply_static_page=1201
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/icon_103.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_103.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_103.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 1450 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/icon_103.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a431973b-05yUsJ.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/icon_103.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:3ebafa4a97388b727073564fd588cd118ebe67b2===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_104.png
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:32; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4327d2b-UdquIw.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_104.png - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/icon_104.png?simply_static_page=1202
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/icon_104.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_104.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_104.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 1251 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/icon_104.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4327d2b-UdquIw.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/icon_104.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:c782e1c080ed15d8ef7ced0947027d31e18c8fc7===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_105.png
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:31; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4336709-lM3Isb.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_105.png - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/icon_105.png?simply_static_page=1203
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/icon_105.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_105.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_105.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 1397 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/icon_105.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4336709-lM3Isb.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/icon_105.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:d7aadd0abb1251c8695ee5951cb64748bf610c35===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_106.png
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:30; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4345e33-M6W2lt.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_106.png - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/icon_106.png?simply_static_page=1204
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/icon_106.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_106.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_106.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 862 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/icon_106.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4345e33-M6W2lt.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/icon_106.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:d0777233359a48b0e7bfe4b1e09487126d101983===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/ctabg.png
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:29; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4353d19-esGn1S.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/ctabg.png - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/ctabg.png?simply_static_page=1205
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/ctabg.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/ctabg.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/ctabg.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 13179 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/ctabg.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4353d19-esGn1S.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/ctabg.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:1c99a474fc0bd8d0268443e96367195b1a739b45===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/uploads/2025/09/logo_bg_large.png
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:28; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a436419b-IxDOlQ.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/uploads/2025/09/logo_bg_large.png - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/uploads/2025/09/logo_bg_large.png?simply_static_page=1206
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/uploads/2025/09/logo_bg_large.png - Full file path: /var/www/html/wp-content/uploads/2025/09/logo_bg_large.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/uploads/2025/09/logo_bg_large.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 12302 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/uploads/2025/09/logo_bg_large.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a436419b-IxDOlQ.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/uploads/2025/09/logo_bg_large.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:506671f208226228014cc2cebf75cccaf2160167===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/uploads/2025/09/logo_bg_large-300x300.png
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:27; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a43749e8-egwJGI.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/uploads/2025/09/logo_bg_large-300x300.png - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/uploads/2025/09/logo_bg_large-300x300.png?simply_static_page=1207
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/uploads/2025/09/logo_bg_large-300x300.png - Full file path: /var/www/html/wp-content/uploads/2025/09/logo_bg_large-300x300.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/uploads/2025/09/logo_bg_large-300x300.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 13097 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/uploads/2025/09/logo_bg_large-300x300.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a43749e8-egwJGI.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/uploads/2025/09/logo_bg_large-300x300.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:f5a46aa3450f8df48376521a367d9e73b46df8bd===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/uploads/2025/09/logo_bg_large-150x150.png
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:26; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4383947-osEeck.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/uploads/2025/09/logo_bg_large-150x150.png - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/uploads/2025/09/logo_bg_large-150x150.png?simply_static_page=1208
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/uploads/2025/09/logo_bg_large-150x150.png - Full file path: /var/www/html/wp-content/uploads/2025/09/logo_bg_large-150x150.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/uploads/2025/09/logo_bg_large-150x150.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 4441 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/uploads/2025/09/logo_bg_large-150x150.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4383947-osEeck.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/uploads/2025/09/logo_bg_large-150x150.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:3a2cedebbe459a20f3325b5ce020faf0754b38cb===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/star_bg.png
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:25; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a439143e-qP7PiG.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/star_bg.png - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/star_bg.png?simply_static_page=1209
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/star_bg.png - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/star_bg.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/star_bg.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 3071 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/star_bg.png
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a439143e-qP7PiG.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/star_bg.png
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:5d18099d0ff503abb843b3d6431d48b04a063683===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/feed/
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:24; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:80] Excludable found: URL: http://localhost/feed/
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:90] Skipping URL because it is no-save and no-follow
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/comments/feed/
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:23; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:80] Excludable found: URL: http://localhost/comments/feed/
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:90] Skipping URL because it is no-save and no-follow
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-includes/blocks/cover/style.min.css
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:22; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a43b6ffd-E0t7Tb.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-includes/blocks/cover/style.min.css - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-includes/blocks/cover/style.min.css?simply_static_page=1212
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-includes/blocks/cover/style.min.css - Full file path: /var/www/html/wp-includes/blocks/cover/style.min.css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-includes/blocks/cover/style.min.css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 19126 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: text/css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-includes/blocks/cover/style.min.css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a43b6ffd-E0t7Tb.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-includes/blocks/cover/style.min.css
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:4dcca32b8b9143635264dccf437b80e1acf6525e===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-includes/blocks/gallery/style.min.css
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:21; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a43c5ff7-jayG12.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-includes/blocks/gallery/style.min.css - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-includes/blocks/gallery/style.min.css?simply_static_page=1213
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-includes/blocks/gallery/style.min.css - Full file path: /var/www/html/wp-includes/blocks/gallery/style.min.css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-includes/blocks/gallery/style.min.css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 15927 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: text/css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-includes/blocks/gallery/style.min.css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a43c5ff7-jayG12.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-includes/blocks/gallery/style.min.css
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:43] [class-ss-page.php:128] Checking Content Identical:bae18680d98f95c2817e1af0efe119bfbec3f592===. Value: FALSE
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/css/blocks.css
+[2025-10-22 20:10:43] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 77
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a43d7768-KUAbBV.tmp
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/css/blocks.css - Is local asset: Yes
+[2025-10-22 20:10:43] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/css/blocks.css?simply_static_page=1214
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/css/blocks.css - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/css/blocks.css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/css/blocks.css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:146] Filesize: 32459 bytes
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: text/css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/css/blocks.css
+[2025-10-22 20:10:43] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a43d7768-KUAbBV.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/css/blocks.css
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:43] [class-ss-fetch-urls-task.php:159] Adding 5 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:c3f0d4f039b46591aeadf344e1f95ed6819d5bf6===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/style.css
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a441ee7c-12av0s.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/style.css - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/style.css?simply_static_page=1215
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/style.css - Full file path: /var/www/html/wp-content/themes/saaslauncher/style.css
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/style.css
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 31886 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: text/css
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/style.css
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a441ee7c-12av0s.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/style.css
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 2 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:30e74789015448da3153610ad072ece74767480e===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/css/aos.css
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a443feb9-QkiSSS.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/css/aos.css - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/css/aos.css?simply_static_page=1216
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/css/aos.css - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/css/aos.css
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/css/aos.css
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 31808 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: text/css
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/css/aos.css
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a443feb9-QkiSSS.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/css/aos.css
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:f371787baba0076a35395175f9c28d472d944e41===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-json/
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:80] Excludable found: URL: http://localhost/wp-json/
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:90] Skipping URL because it is no-save and no-follow
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/xmlrpc.php
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:80] Excludable found: URL: http://localhost/xmlrpc.php
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:90] Skipping URL because it is no-save and no-follow
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/allura/Allura-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4463413-5Scn8w.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/allura/Allura-Regular.woff2 - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/allura/Allura-Regular.woff2?simply_static_page=1219
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/allura/Allura-Regular.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/allura/Allura-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/allura/Allura-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 85148 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/allura/Allura-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4463413-5Scn8w.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/allura/Allura-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:0351dc37b9ec52477948f08532f1fa2d703c5882===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/archivo/Archivo-VariableFont.woff2
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4471f29-1mQ0BF.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/archivo/Archivo-VariableFont.woff2 - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/archivo/Archivo-VariableFont.woff2?simply_static_page=1220
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/archivo/Archivo-VariableFont.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/archivo/Archivo-VariableFont.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/archivo/Archivo-VariableFont.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 186240 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/archivo/Archivo-VariableFont.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4471f29-1mQ0BF.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/archivo/Archivo-VariableFont.woff2
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:f6b77370d24f6d4fcec7e301ff3d0e055427ab1f===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-ExtraLight.woff2
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4483d75-QbyQWX.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-ExtraLight.woff2 - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-ExtraLight.woff2?simply_static_page=1221
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-ExtraLight.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-ExtraLight.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-ExtraLight.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 36644 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-ExtraLight.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4483d75-QbyQWX.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-ExtraLight.woff2
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:7231eea6faf87be1e62a0170a5fc988d23ce4e9a===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4494690-QjjWvi.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Regular.woff2 - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Regular.woff2?simply_static_page=1222
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Regular.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 37212 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4494690-QjjWvi.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:fb5393d2f6fe0e8dcd2b2925220cb9f9fa7a57fc===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Medium.woff2
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a44a1bcc-NPj39f.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Medium.woff2 - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Medium.woff2?simply_static_page=1223
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Medium.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Medium.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Medium.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 37184 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Medium.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a44a1bcc-NPj39f.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Medium.woff2
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:bd81a4ebdcf6f4ff987309dee0e9258cb9f9833d===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-SemiBold.woff2
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a44b2861-db05t5.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-SemiBold.woff2 - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-SemiBold.woff2?simply_static_page=1224
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-SemiBold.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-SemiBold.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-SemiBold.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 38400 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-SemiBold.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a44b2861-db05t5.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-SemiBold.woff2
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:1d0e5ceb5e0e9b9d00afadd5ae2c1d8359bd807c===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Bold.woff2
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a44c387c-kUf6PP.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Bold.woff2 - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Bold.woff2?simply_static_page=1225
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Bold.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Bold.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Bold.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 38268 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Bold.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a44c387c-kUf6PP.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/barlow/Barlow-Bold.woff2
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:9a1286dffc9ded91871c38383ea8810772aeb4f0===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/big_shoulders/BigShoulders-VariableFont_wght.woff2
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a44d067b-GfWFma.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/big_shoulders/BigShoulders-VariableFont_wght.woff2 - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/big_shoulders/BigShoulders-VariableFont_wght.woff2?simply_static_page=1226
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/big_shoulders/BigShoulders-VariableFont_wght.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/big_shoulders/BigShoulders-VariableFont_wght.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/big_shoulders/BigShoulders-VariableFont_wght.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 35736 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/big_shoulders/BigShoulders-VariableFont_wght.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a44d067b-GfWFma.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/big_shoulders/BigShoulders-VariableFont_wght.woff2
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:2e0db286fc84b62bfcf77e494d08c464ba14ba4a===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/bricolage_grotesque/BricolageGrotesque-VariableFont.woff2
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a44e14db-DlTCjY.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/bricolage_grotesque/BricolageGrotesque-VariableFont.woff2 - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/bricolage_grotesque/BricolageGrotesque-VariableFont.woff2?simply_static_page=1227
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/bricolage_grotesque/BricolageGrotesque-VariableFont.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/bricolage_grotesque/BricolageGrotesque-VariableFont.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/bricolage_grotesque/BricolageGrotesque-VariableFont.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 204956 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/bricolage_grotesque/BricolageGrotesque-VariableFont.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a44e14db-DlTCjY.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/bricolage_grotesque/BricolageGrotesque-VariableFont.woff2
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:44] [class-ss-page.php:128] Checking Content Identical:bf0131a9896192007be5b5d2eb091efda7cb4c65===. Value: FALSE
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/dm_serif_display/DMSerifDisplay-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 77
+[2025-10-22 20:10:44] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a44f237a-XFsDaY.tmp
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/dm_serif_display/DMSerifDisplay-Regular.woff2 - Is local asset: Yes
+[2025-10-22 20:10:44] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/dm_serif_display/DMSerifDisplay-Regular.woff2?simply_static_page=1228
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/dm_serif_display/DMSerifDisplay-Regular.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/dm_serif_display/DMSerifDisplay-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/dm_serif_display/DMSerifDisplay-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:146] Filesize: 30184 bytes
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/dm_serif_display/DMSerifDisplay-Regular.woff2
+[2025-10-22 20:10:44] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a44f237a-XFsDaY.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/dm_serif_display/DMSerifDisplay-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:dab85b79360b32576138336f95f5845f985ad0b8===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/faculty_glyphic/FacultyGlyphic-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 77
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a450eed1-Dtn4J5.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/faculty_glyphic/FacultyGlyphic-Regular.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/faculty_glyphic/FacultyGlyphic-Regular.woff2?simply_static_page=1229
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/faculty_glyphic/FacultyGlyphic-Regular.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/faculty_glyphic/FacultyGlyphic-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/faculty_glyphic/FacultyGlyphic-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 26424 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/faculty_glyphic/FacultyGlyphic-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a450eed1-Dtn4J5.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/faculty_glyphic/FacultyGlyphic-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:a07c6745b54b3cd5b3e6ec09150616fb465d529f===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/funnel_display/FunnelDisplay-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 77
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a451bb9a-PmJp0C.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/funnel_display/FunnelDisplay-VariableFont_wght.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/funnel_display/FunnelDisplay-VariableFont_wght.woff2?simply_static_page=1230
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/funnel_display/FunnelDisplay-VariableFont_wght.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/funnel_display/FunnelDisplay-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/funnel_display/FunnelDisplay-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 14928 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/funnel_display/FunnelDisplay-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a451bb9a-PmJp0C.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/funnel_display/FunnelDisplay-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:0d606a602988c50599779accf7045f541ba1768d===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/geist/Geist-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 77
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a452c684-Dlmy9K.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/geist/Geist-VariableFont.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/geist/Geist-VariableFont.woff2?simply_static_page=1231
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/geist/Geist-VariableFont.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/geist/Geist-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/geist/Geist-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 38236 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/geist/Geist-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a452c684-Dlmy9K.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/geist/Geist-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:187e05c1d1f912ce297e82cf41106738fe5d534d===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/host_grotesk/HostGrotesk-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 77
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a453c736-jqAujA.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/host_grotesk/HostGrotesk-VariableFont.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/host_grotesk/HostGrotesk-VariableFont.woff2?simply_static_page=1232
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/host_grotesk/HostGrotesk-VariableFont.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/host_grotesk/HostGrotesk-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/host_grotesk/HostGrotesk-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 23164 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/host_grotesk/HostGrotesk-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a453c736-jqAujA.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/host_grotesk/HostGrotesk-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:5e2cf80f0aef5ddfcddea740689823bfcda65ffd===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/hubot_sans/HubotSans-VariableFont_wght.ttf
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 77
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a45492d0-4RDSED.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/hubot_sans/HubotSans-VariableFont_wght.ttf - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/hubot_sans/HubotSans-VariableFont_wght.ttf?simply_static_page=1233
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/hubot_sans/HubotSans-VariableFont_wght.ttf - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/hubot_sans/HubotSans-VariableFont_wght.ttf
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/hubot_sans/HubotSans-VariableFont_wght.ttf
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 369104 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/sfnt
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/hubot_sans/HubotSans-VariableFont_wght.ttf
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a45492d0-4RDSED.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/hubot_sans/HubotSans-VariableFont_wght.ttf
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:0f393f84e75a6fae913b579782ae5230bf79914a===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 1 of 77 pages/files
+[2025-10-22 20:10:45] [class-ss-archive-creation-job.php:241] We're not done with the fetch_urls task yet
+[2025-10-22 20:10:45] [class-ss-archive-creation-job.php:194] Current task: fetch_urls
+[2025-10-22 20:10:45] [class-ss-archive-creation-job.php:208] Performing task: fetch_urls
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:69] Total pages: 84; Pages remaining: 33
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Light.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:33; Total: 84
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a456080a-xPzUXX.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Light.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Light.woff2?simply_static_page=1234
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Light.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Light.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Light.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 52604 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Light.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a456080a-xPzUXX.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Light.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:cae12c4b6123c578765af2374f2ca05391852a79===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:32; Total: 84
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4572a2b-Bpr1mZ.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Regular.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Regular.woff2?simply_static_page=1235
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Regular.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 51476 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4572a2b-Bpr1mZ.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:9ad31ef305e5119e68ea61c690c2015f418acd45===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Medium.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:31; Total: 84
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4583976-cbYfue.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Medium.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Medium.woff2?simply_static_page=1236
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Medium.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Medium.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Medium.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 52980 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Medium.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4583976-cbYfue.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Medium.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:4d47fcd6d32fde783d385698c23e731f0c986d90===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Bold.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:30; Total: 84
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4592b1f-qdrLh3.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Bold.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Bold.woff2?simply_static_page=1237
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Bold.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Bold.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Bold.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 50912 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Bold.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4592b1f-qdrLh3.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/ibm_plex_serif/IBMPlexSerif-Bold.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:1f35af285254e4a8feda723e38eacdb3401e2d35===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/inter/Inter-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:29; Total: 84
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a45a08e5-4HKTvE.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/inter/Inter-VariableFont_wght.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/inter/Inter-VariableFont_wght.woff2?simply_static_page=1238
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/inter/Inter-VariableFont_wght.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/inter/Inter-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/inter/Inter-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 326628 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/inter/Inter-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a45a08e5-4HKTvE.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/inter/Inter-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:40546dbfd5c467c3257d8f3a4ad8af0d9995aeb6===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/libre_franklin/LibreFranklin-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:28; Total: 84
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a45b235d-BMelKf.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/libre_franklin/LibreFranklin-VariableFont.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/libre_franklin/LibreFranklin-VariableFont.woff2?simply_static_page=1239
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/libre_franklin/LibreFranklin-VariableFont.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/libre_franklin/LibreFranklin-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/libre_franklin/LibreFranklin-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 39360 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/libre_franklin/LibreFranklin-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a45b235d-BMelKf.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/libre_franklin/LibreFranklin-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:c634bd998b21e5fc907552a1edf01bddabbf0d2a===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/manrope/Manrope-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:27; Total: 84
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a45c1873-u4G3Av.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/manrope/Manrope-VariableFont_wght.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/manrope/Manrope-VariableFont_wght.woff2?simply_static_page=1240
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/manrope/Manrope-VariableFont_wght.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/manrope/Manrope-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/manrope/Manrope-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 53600 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/manrope/Manrope-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a45c1873-u4G3Av.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/manrope/Manrope-VariableFont_wght.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:5b56dbe3d3eabe178719988f4fee76d9d4ad7079===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/michroma/Michroma-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:26; Total: 84
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a45d3fea-dInVVF.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/michroma/Michroma-Regular.woff2 - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/michroma/Michroma-Regular.woff2?simply_static_page=1241
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/michroma/Michroma-Regular.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/michroma/Michroma-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/michroma/Michroma-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 27276 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/michroma/Michroma-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a45d3fea-dInVVF.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/michroma/Michroma-Regular.woff2
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:75411e247bb095f9cde0a29b1ee8fcbaf31e9abb===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/mona_sans/MonaSans-VariableFont_wdth.ttf
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:25; Total: 84
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a45e3c89-8kN7kH.tmp
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/mona_sans/MonaSans-VariableFont_wdth.ttf - Is local asset: Yes
+[2025-10-22 20:10:45] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/mona_sans/MonaSans-VariableFont_wdth.ttf?simply_static_page=1242
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/mona_sans/MonaSans-VariableFont_wdth.ttf - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/mona_sans/MonaSans-VariableFont_wdth.ttf
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/mona_sans/MonaSans-VariableFont_wdth.ttf
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:146] Filesize: 348692 bytes
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/sfnt
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/mona_sans/MonaSans-VariableFont_wdth.ttf
+[2025-10-22 20:10:45] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a45e3c89-8kN7kH.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/mona_sans/MonaSans-VariableFont_wdth.ttf
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:45] [class-ss-page.php:128] Checking Content Identical:810083a26899892050e76ac2714c4f67f762659a===. Value: FALSE
+[2025-10-22 20:10:45] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/montagu_slab/MontaguSlab-VariableFont.woff2
+[2025-10-22 20:10:45] [class-ss-task.php:58] [PAGES STATUS] Remaining:24; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4600137-ctTkaT.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/montagu_slab/MontaguSlab-VariableFont.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/montagu_slab/MontaguSlab-VariableFont.woff2?simply_static_page=1243
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/montagu_slab/MontaguSlab-VariableFont.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/montagu_slab/MontaguSlab-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/montagu_slab/MontaguSlab-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 36236 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/montagu_slab/MontaguSlab-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4600137-ctTkaT.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/montagu_slab/MontaguSlab-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:6d1addbd5231d3cf14a6bcefa30c0b5346015847===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/open_sans/OpenSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:23; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a460cb7a-g7Pucn.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/open_sans/OpenSans-VariableFont.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/open_sans/OpenSans-VariableFont.woff2?simply_static_page=1244
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/open_sans/OpenSans-VariableFont.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/open_sans/OpenSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/open_sans/OpenSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 60164 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/open_sans/OpenSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a460cb7a-g7Pucn.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/open_sans/OpenSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:ca0de4b009d08a3e63f8e687a766e4cbb25cb048===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/oswald/Oswald-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:22; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a461dba5-dsJF1h.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/oswald/Oswald-VariableFont_wght.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/oswald/Oswald-VariableFont_wght.woff2?simply_static_page=1245
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/oswald/Oswald-VariableFont_wght.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/oswald/Oswald-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/oswald/Oswald-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 56136 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/oswald/Oswald-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a461dba5-dsJF1h.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/oswald/Oswald-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:9c957e86f5969ae10165fb4efa7b0ad5c20f201f===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/outfit/Outfit-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:21; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a462c034-b7mPoQ.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/outfit/Outfit-VariableFont_wght.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/outfit/Outfit-VariableFont_wght.woff2?simply_static_page=1246
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/outfit/Outfit-VariableFont_wght.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/outfit/Outfit-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/outfit/Outfit-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 44688 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/outfit/Outfit-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a462c034-b7mPoQ.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/outfit/Outfit-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:e2e8cc089f16f49007118d993650f1b3dfa22dce===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/playfair_display/PlayfairDisplay-VariableFont_wght.ttf
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4639a1d-EyuQA7.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/playfair_display/PlayfairDisplay-VariableFont_wght.ttf - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/playfair_display/PlayfairDisplay-VariableFont_wght.ttf?simply_static_page=1247
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/playfair_display/PlayfairDisplay-VariableFont_wght.ttf - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/playfair_display/PlayfairDisplay-VariableFont_wght.ttf
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/playfair_display/PlayfairDisplay-VariableFont_wght.ttf
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 301576 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/sfnt
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/playfair_display/PlayfairDisplay-VariableFont_wght.ttf
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4639a1d-EyuQA7.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/playfair_display/PlayfairDisplay-VariableFont_wght.ttf
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:e24b800575cb38de6687eeb2cb33672fa5f6acee===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/plus_jakarta_sans/PlusJakartaSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a464bbec-zoXjdb.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/plus_jakarta_sans/PlusJakartaSans-VariableFont.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/plus_jakarta_sans/PlusJakartaSans-VariableFont.woff2?simply_static_page=1248
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/plus_jakarta_sans/PlusJakartaSans-VariableFont.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/plus_jakarta_sans/PlusJakartaSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/plus_jakarta_sans/PlusJakartaSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 33624 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/plus_jakarta_sans/PlusJakartaSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a464bbec-zoXjdb.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/plus_jakarta_sans/PlusJakartaSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:271c19527be4f125c515077858d9aec21cb4a719===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/public-sans/PublicSans-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a465b8cf-BfWUUA.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/public-sans/PublicSans-VariableFont_wght.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/public-sans/PublicSans-VariableFont_wght.woff2?simply_static_page=1249
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/public-sans/PublicSans-VariableFont_wght.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/public-sans/PublicSans-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/public-sans/PublicSans-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 41568 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/public-sans/PublicSans-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a465b8cf-BfWUUA.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/public-sans/PublicSans-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:f1bed7fd5928c7250aa3301d6c07ad1d0824316b===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/quicksand/Quicksand-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a466ceb8-BsgvQp.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/quicksand/Quicksand-VariableFont_wght.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/quicksand/Quicksand-VariableFont_wght.woff2?simply_static_page=1250
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/quicksand/Quicksand-VariableFont_wght.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/quicksand/Quicksand-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/quicksand/Quicksand-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 52244 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/quicksand/Quicksand-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a466ceb8-BsgvQp.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/quicksand/Quicksand-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:fe7b955114768b9ff232d8cbc463201999e6d356===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/rethink_sans/RethinkSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a467d0b5-PntImT.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/rethink_sans/RethinkSans-VariableFont.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/rethink_sans/RethinkSans-VariableFont.woff2?simply_static_page=1251
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/rethink_sans/RethinkSans-VariableFont.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/rethink_sans/RethinkSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/rethink_sans/RethinkSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 48608 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/rethink_sans/RethinkSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a467d0b5-PntImT.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/rethink_sans/RethinkSans-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:d6a8d0b8d8f2421c388868310b46aaeacb6f1cc0===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Regular.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a468e143-slEo4X.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Regular.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Regular.woff2?simply_static_page=1252
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Regular.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Regular.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Regular.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 63528 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Regular.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a468e143-slEo4X.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Regular.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:49283513a6d7b0a2312c18eb3fa72ce9f56f670f===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Medium.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a469adf5-UDgpYu.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Medium.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Medium.woff2?simply_static_page=1253
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Medium.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Medium.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Medium.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 64092 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Medium.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a469adf5-UDgpYu.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Medium.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:7abaab019c9e5d97f433d855214399473d9586c4===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Bold.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a46ab263-JhldZk.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Bold.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Bold.woff2?simply_static_page=1254
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Bold.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Bold.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Bold.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 63480 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Bold.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a46ab263-JhldZk.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/roboto/Roboto-Bold.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:ab57f2a8b7bf99aa77d423512720f0f123b121c1===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/rubik/Rubik-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a46bb6af-NSFfj9.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/rubik/Rubik-VariableFont.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/rubik/Rubik-VariableFont.woff2?simply_static_page=1255
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/rubik/Rubik-VariableFont.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/rubik/Rubik-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/rubik/Rubik-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 110860 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/rubik/Rubik-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a46bb6af-NSFfj9.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/rubik/Rubik-VariableFont.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:fcaa818d3e97673af91ecac9d76234697e5997b0===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Regular.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a46c8cd6-jwnvmK.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Regular.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Regular.woff2?simply_static_page=1256
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Regular.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Regular.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Regular.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 36132 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Regular.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a46c8cd6-jwnvmK.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Regular.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:4d3b63ece0498e1bf1ef512b9ec79f7a929675cc===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Bold.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a46d9ecc-OFnRo0.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Bold.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Bold.woff2?simply_static_page=1257
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Bold.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Bold.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Bold.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 36556 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Bold.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a46d9ecc-OFnRo0.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/space_mono/SpaceMono-Bold.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:b998dc78efde244e8c5e28c70f864852de56fa9a===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/syne/Syne-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 84
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a46e9b89-yDJjSz.tmp
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/syne/Syne-VariableFont_wght.woff2 - Is local asset: Yes
+[2025-10-22 20:10:46] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/syne/Syne-VariableFont_wght.woff2?simply_static_page=1258
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/syne/Syne-VariableFont_wght.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/syne/Syne-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/syne/Syne-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:146] Filesize: 60240 bytes
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/syne/Syne-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a46e9b89-yDJjSz.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/syne/Syne-VariableFont_wght.woff2
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:46] [class-ss-page.php:128] Checking Content Identical:c67863295a9b568df2876d8bac945e0407cd829e===. Value: FALSE
+[2025-10-22 20:10:46] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/tenor_sans/TenorSans.woff2
+[2025-10-22 20:10:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 84
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a47034d4-fx9dZW.tmp
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/fonts/tenor_sans/TenorSans.woff2 - Is local asset: Yes
+[2025-10-22 20:10:47] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/fonts/tenor_sans/TenorSans.woff2?simply_static_page=1259
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/fonts/tenor_sans/TenorSans.woff2 - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/tenor_sans/TenorSans.woff2
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/fonts/tenor_sans/TenorSans.woff2
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:146] Filesize: 28912 bytes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: font/woff2
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/fonts/tenor_sans/TenorSans.woff2
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a47034d4-fx9dZW.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/fonts/tenor_sans/TenorSans.woff2
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:47] [class-ss-page.php:128] Checking Content Identical:2eee90ca5eb7b3f6464b87bfccaf73ff6f6d2f16===. Value: FALSE
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/arrow_icon.svg
+[2025-10-22 20:10:47] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 84
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a47149cb-9MRzRL.tmp
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/arrow_icon.svg - Is local asset: Yes
+[2025-10-22 20:10:47] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/arrow_icon.svg?simply_static_page=1260
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/arrow_icon.svg - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/arrow_icon.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/arrow_icon.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:146] Filesize: 489 bytes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/svg+xml
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/arrow_icon.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a47149cb-9MRzRL.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/arrow_icon.svg
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:47] [class-ss-page.php:128] Checking Content Identical:4ab0ea03b14e7d13b90aac4ba39e61cc00df3221===. Value: FALSE
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/upward-arrow.svg
+[2025-10-22 20:10:47] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 84
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a472264f-x2SPzB.tmp
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/upward-arrow.svg - Is local asset: Yes
+[2025-10-22 20:10:47] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/upward-arrow.svg?simply_static_page=1261
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/upward-arrow.svg - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/upward-arrow.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/upward-arrow.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:146] Filesize: 196 bytes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/svg+xml
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/upward-arrow.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a472264f-x2SPzB.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/upward-arrow.svg
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:47] [class-ss-page.php:128] Checking Content Identical:ed1cb78234b372548fc6c5919784fcc29f67366f===. Value: FALSE
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/check_icon.svg
+[2025-10-22 20:10:47] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 84
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a47319b9-rGds9s.tmp
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/check_icon.svg - Is local asset: Yes
+[2025-10-22 20:10:47] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/check_icon.svg?simply_static_page=1262
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/check_icon.svg - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/check_icon.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/check_icon.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:146] Filesize: 227 bytes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/svg+xml
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/check_icon.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a47319b9-rGds9s.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/check_icon.svg
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:47] [class-ss-page.php:128] Checking Content Identical:34934d14598c84c756a750ade07449717e134ca0===. Value: FALSE
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_user.svg
+[2025-10-22 20:10:47] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 84
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a474217b-ssGv8q.tmp
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_user.svg - Is local asset: Yes
+[2025-10-22 20:10:47] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/icon_user.svg?simply_static_page=1263
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/icon_user.svg - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_user.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_user.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:146] Filesize: 20584 bytes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/svg+xml
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/icon_user.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a474217b-ssGv8q.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/icon_user.svg
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:47] [class-ss-page.php:128] Checking Content Identical:1cd31be355aebd2d81d340d492b377f428540e09===. Value: FALSE
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_calendar.svg
+[2025-10-22 20:10:47] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 84
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a474fa21-LmMnVI.tmp
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/icon_calendar.svg - Is local asset: Yes
+[2025-10-22 20:10:47] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/icon_calendar.svg?simply_static_page=1264
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/icon_calendar.svg - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_calendar.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/icon_calendar.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:146] Filesize: 1845 bytes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/svg+xml
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/icon_calendar.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a474fa21-LmMnVI.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/icon_calendar.svg
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:47] [class-ss-page.php:128] Checking Content Identical:4a6f594d25709d1dfb373ada255269179b431152===. Value: FALSE
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/up-arrow.svg
+[2025-10-22 20:10:47] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 84
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4760fb5-x7spiT.tmp
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/up-arrow.svg - Is local asset: Yes
+[2025-10-22 20:10:47] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/up-arrow.svg?simply_static_page=1265
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/up-arrow.svg - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/up-arrow.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:117] Copying local file directly: /var/www/html/wp-content/themes/saaslauncher/assets/images/up-arrow.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:146] Filesize: 481 bytes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:175] http_status_code: 200 | content_type: image/svg+xml
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:289] New filename for static page: wp-content/themes/saaslauncher/assets/images/up-arrow.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a4760fb5-x7spiT.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/wp-content/themes/saaslauncher/assets/images/up-arrow.svg
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:152] Extracting URLs and replacing URLs in the static file
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:159] Adding 0 URLs to the queue
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:170] We're saving this URL; keeping the static file
+[2025-10-22 20:10:47] [class-ss-page.php:128] Checking Content Identical:4dc190eb313df8757480aee8c1c7b848530e8470===. Value: FALSE
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:73] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/btn-arrow.svg
+[2025-10-22 20:10:47] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 84
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:84] URL is not being excluded
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a477588b-4QKolw.tmp
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/btn-arrow.svg - Is local asset: Yes
+[2025-10-22 20:10:47] [class-ss-page-handler.php:53] URL Prepared:http://localhost/wp-content/themes/saaslauncher/assets/images/btn-arrow.svg?simply_static_page=1266
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/btn-arrow.svg - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/btn-arrow.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:137] Local file not found, falling back to remote_get
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:307] Fetching URL: http://localhost/wp-content/themes/saaslauncher/assets/images/btn-arrow.svg?simply_static_page=1266
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:146] Filesize: 86393 bytes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:175] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:203] We weren't able to establish a filename; deleting temp file
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a4789524-lR599C.tmp
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:101] URL: http://localhost/wp-content/themes/saaslauncher/assets/images/btn-arrow.svg - Is local asset: Yes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:113] Local path: /wp-content/themes/saaslauncher/assets/images/btn-arrow.svg - Full file path: /var/www/html/wp-content/themes/saaslauncher/assets/images/btn-arrow.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:137] Local file not found, falling back to remote_get
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:307] Fetching URL: http://localhost/wp-content/themes/saaslauncher/assets/images/btn-arrow.svg
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:146] Filesize: 86393 bytes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:175] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:203] We weren't able to establish a filename; deleting temp file
+[2025-10-22 20:10:47] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 51 of 84 pages/files
+[2025-10-22 20:10:47] [class-ss-archive-creation-job.php:241] We're not done with the fetch_urls task yet
+[2025-10-22 20:10:47] [class-ss-archive-creation-job.php:194] Current task: fetch_urls
+[2025-10-22 20:10:47] [class-ss-archive-creation-job.php:208] Performing task: fetch_urls
+[2025-10-22 20:10:47] [class-ss-fetch-urls-task.php:69] Total pages: 84; Pages remaining: 0
+[2025-10-22 20:10:47] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 84 of 84 pages/files
+[2025-10-22 20:10:47] [class-ss-archive-creation-job.php:233] We've found our next task: generate_404
+[2025-10-22 20:10:47] [class-ss-archive-creation-job.php:194] Current task: generate_404
+[2025-10-22 20:10:47] [class-ss-archive-creation-job.php:208] Performing task: generate_404
+[2025-10-22 20:10:47] [class-ss-task.php:44] Status message: [generate_404] Generating 404 Page.
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/68f93a47b3555-nkfNtC.tmp
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:101] URL: http://localhost/1761163848 - Is local asset: No
+[2025-10-22 20:10:47] [class-ss-page-handler.php:53] URL Prepared:http://localhost/1761163848?simply_static_page=0
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:307] Fetching URL: http://localhost/1761163848?simply_static_page=0
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:146] Filesize: 86393 bytes
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:175] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:289] New filename for static page: 404/index.html
+[2025-10-22 20:10:47] [class-ss-url-fetcher.php:199] Renaming temp file from /tmp/68f93a47b3555-nkfNtC.tmp to /var/www/html/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838/404/index.html
+[2025-10-22 20:10:47] [class-ss-generate-404-task.php:119] Replacing URLs in the static file
+[2025-10-22 20:10:47] [class-ss-generate-404-task.php:125] We're saving this URL; keeping the static file
+[2025-10-22 20:10:47] [class-ss-page.php:128] Checking Content Identical:ed345d62d0214d1b651eefa3f72650d52e70ae42===. Value: FALSE
+[2025-10-22 20:10:47] [class-ss-task.php:44] Status message: [generate_404] 404 Page generated
+[2025-10-22 20:10:47] [class-ss-archive-creation-job.php:233] We've found our next task: create_zip_archive
+[2025-10-22 20:10:47] [class-ss-archive-creation-job.php:194] Current task: create_zip_archive
+[2025-10-22 20:10:47] [class-ss-archive-creation-job.php:208] Performing task: create_zip_archive
+[2025-10-22 20:10:47] [class-ss-create-zip-archive.php:85] Fetching list of files to include in zip
+[2025-10-22 20:10:47] [class-ss-create-zip-archive.php:94] Creating zip archive
+[2025-10-22 20:10:47] [class-ss-task.php:44] Status message: [create_zip_archive] ZIP archive created:  <a href="http://localhost/wp-content/uploads/simply-static/temp-files/simply-static-1-1761163838.zip">Click here to download</a>
+[2025-10-22 20:10:48] [class-ss-archive-creation-job.php:233] We've found our next task: wrapup
+[2025-10-22 20:10:48] [class-ss-archive-creation-job.php:194] Current task: wrapup
+[2025-10-22 20:10:48] [class-ss-archive-creation-job.php:208] Performing task: wrapup
+[2025-10-22 20:10:48] [class-ss-wrapup-task.php:23] Deleting temporary files
+[2025-10-22 20:10:48] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
+[2025-10-22 20:10:48] [class-ss-archive-creation-job.php:228] This task is done and there are no more tasks, time to complete the job
+[2025-10-22 20:10:48] [class-ss-archive-creation-job.php:273] Completing the job
+[2025-10-22 20:10:48] [class-ss-archive-creation-job.php:413] Status message: [done] Done! Finished in 00:00:10
