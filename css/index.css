@@ -1,6 +1,7 @@
 .bg-darkblue {
     /*background-color: rgb(15, 23, 42);*/
-    background-color: rgb(211, 231, 239)
+    /*background-color: rgb(211, 231, 239)*/
+    background: linear-gradient(180deg, rgb(211, 231, 239) 0%, rgb(255, 255, 255) 100%);
 }
 
 .b-example-divider {
@@ -30,5 +31,10 @@ body {
 }
 
 .footer-image {
-    width: 5%;
+    height: 50px;
+    width: auto;
+}
+
+.card-image {
+    padding: 10%
 }
