@@ -1,133 +1,485 @@
 <!DOCTYPE html>
-
+<html lang="en" class="no-js">
 <head>
-    <title>Divertly | Building Digital Trust One Link At A Time</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divertly — Programmable link routing</title>
+  <meta name="description" content="Point one short link at many destinations. Weight traffic, fail over, and reroute by API — on your own domain. No link caps.">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="referrer" content="origin">
-    <meta name="description" content="We're building the next generation of URL shortening services, one that puts you in the driver's seat with custom domains, analytics, and multiple target pages. These and many other great features are launching soon -- be the first to sign up for a FREE account!">
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://divert.ly/">
+  <meta property="og:title" content="Divertly — Programmable link routing">
+  <meta property="og:description" content="Programmable link routing. One link, many destinations — controlled by API.">
+  <meta property="og:image" content="https://divert.ly/images/branding/logo_bg_large.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Divertly — Programmable link routing">
+  <meta name="twitter:description" content="Programmable link routing. One link, many destinations — controlled by API.">
+  <meta name="twitter:image" content="https://divert.ly/images/branding/logo_bg_large.png">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://divert.ly">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Are you creating links your customers will trust?">
-    <meta property="og:description" content="We're building the next generation of URL shortening services, one that puts you in the driver's seat with custom domains, analytics, and multiple target pages. These and many other great features are launching soon -- be the first to sign up for a FREE account!">
-    <meta property="og:image" content="https://divert.ly/opengraph.png">
+  <!-- Favicons -->
+  <link rel="icon" href="/images/favicons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/images/favicons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="divert.ly">
-    <meta property="twitter:url" content="https://divert.ly">
-    <meta name="twitter:title" content="Are you creating links your customers will trust?">
-    <meta name="twitter:description" content="We're building the next generation of URL shortening services, one that puts you in the driver's seat with custom domains, analytics, and multiple target pages. These and many other great features are launching soon -- be the first to sign up for a FREE account!">
-    <meta name="twitter:image" content="https://divert.ly/opengraph.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="images/favicon-32x32.png">
-    <link rel="stylesheet" href="css/index.css">
-    <!--SMARTLOOK-->
-    <script type='text/javascript'>
-        window.smartlook || (function (d) {
-            var o = smartlook = function () { o.api.push(arguments) }, h = d.getElementsByTagName('head')[0];
-            var c = d.createElement('script'); o.api = new Array(); c.async = true; c.type = 'text/javascript';
-            c.charset = 'utf-8'; c.src = 'https://web-sdk.smartlook.com/recorder.js'; h.appendChild(c);
-        })(document);
-        smartlook('init', '72f1aee3975ed6f463f29f410999fef6e988303f', { region: 'eu' });
-    </script>
-    <!--/SMARTLOOK-->
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <script>document.documentElement.classList.remove('no-js');</script>
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<body class="bg-darkblue">
-    <div class="px-4 pt-5 my-5 text-center bg-light mt-0">
-        <div class="container px-5 mb-5">
-            <img class="hero-logo" src="images/logo_bg_large.png">
-        </div>
-        <h1 class="display-4 fw-bold text-body-emphasis">Build digital trust</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">
-                <b>Branded short URLs and QR codes that are easy to read and remember that your customers will trust.</b><br>
-                We're building the next generation of URL shortenng services -- one that puts <i>you</i> in the driver's seat.
-            </p>
-            <p class="lead mb-4"></p>
-        </div>
-        <div class="overflow-hidden" style="max-height: 30vh;">
-            <div id="hero_img" class="container px-5"> <img src="images/frame_safari_dark.png" class="img-fluid rounded-3" alt="divertly platform" width="auto" height="500" loading="lazy"> </div>
-        </div>
-    </div>
+  <!-- ===================== Header ===================== -->
+  <header class="site-header" id="site-header">
     <div class="container">
-        <h1 class="display-1 text-center title-color mb-5">Key Features</h1>
-        <div class="row">
-            <div class="col">
-                <div class="card-group">
-                    <div class="card m-3 rounded-3 shadow">
-                        <img src="images/domain.png" class="card-img-top card-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Bring Your Own Domain</h5>
-                            <p class="card-text">
-                                Use your own domain and maintain consistent branding across youre entire digital footprint.<br><br>
-                                <sub class="text-secondary">+ Paid subscriptions only</sub>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card m-3 rounded-3 shadow">
-                        <img src="images/routing.png" class="card-img-top card-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Flexible Targeting & Routing</h5>
-                            <p class="card-text">
-                                Route clicks to one or more target pages and intelligently split traffic between targets. One URL, multiple outcomes.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card m-3 rounded-3 shadow">
-                        <img src="images/metrics.png" class="card-img-top card-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Metrics & Analytics</h5>
-                            <p class="card-text">
-                                See how your users are interacting with your links in real-time and gain insights into your audience.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__logo" href="/" aria-label="Divertly home">
+          <img src="/images/branding/branding_light.svg" alt="Divertly" width="120" height="26">
+        </a>
+        <ul class="nav__links">
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#use-cases">Use cases</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#developers">Developers</a></li>
+          <li><a href="https://docs.divert.ly">Docs</a></li>
+        </ul>
+        <div class="nav__spacer"></div>
+        <div class="nav__cta">
+          <a class="btn btn-ghost" href="https://app.divert.ly/login">Sign in</a>
+          <a class="btn btn-primary" href="https://app.divert.ly/signup">Start free</a>
         </div>
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navDrawer" aria-label="Open menu">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+      </nav>
     </div>
-    <div class="row justify-content-center mb-5 mt-5">
-        <div class="col-10">
-            <div class="container">
-                <p class="dark-text display-6 text-center">
-                    These and many other great features are launching soon -- be the first to sign up for a FREE account!
-                </p>
-            </div>
-        </div>
+    <div class="nav__drawer" id="navDrawer" hidden>
+      <div class="container">
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#use-cases">Use cases</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#developers">Developers</a></li>
+          <li><a href="https://docs.divert.ly">Docs</a></li>
+          <li><a href="https://app.divert.ly/login">Sign in</a></li>
+        </ul>
+        <a class="btn btn-primary" href="https://app.divert.ly/signup">Start free</a>
+      </div>
     </div>
-    <div class="row justify-content-center mb-5 mt-5">
-        <div class="col-10">
-            <div class="accordion" id="formsDropdown">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button text-bg-info rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#item">
-                            <b>Click here to be notified when we launch!</b>
-                        </button>
-                    </h2>
-                    <div id="item" class="accordion-collapse collapse" data-bs-parent="#formsDropdown">
-                        <div class="accordion-body">
-                            <iframe jsname="L5Fo6c" class="YMEQtf DnR2hf" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals allow-storage-access-by-user-activation" frameborder="0" aria-label="Google Forms, Divertly Interest Form" src="https://docs.google.com/forms/d/e/1FAIpQLSdk2NP-2GhbNrC_cdy8yR35hzzpgE4hamGF-Z40P_RzI-qSqw/viewform?embedded=true" style="height: 1057px; width: 100%" allowfullscreen=""></iframe>
-                        </div>
-                    </div>
-                </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== Hero ===================== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <span class="hero__eyebrow"><i class="bi bi-diagram-3" aria-hidden="true"></i> Routing infrastructure for links</span>
+            <h1>Programmable <span class="grad-text">link routing</span>.</h1>
+            <p class="hero__sub">Point one short link at many destinations. Weight them, fail over between them, reroute them by API — all on your own domain.</p>
+            <div class="hero__cta">
+              <a class="btn btn-primary btn-lg" href="https://app.divert.ly/signup">Start free <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              <a class="btn btn-secondary btn-lg" href="https://docs.divert.ly">Read the API docs</a>
             </div>
+          </div>
+          <div class="hero__visual reveal">
+            <div class="code-card">
+              <div class="code-card__bar">
+                <span class="code-card__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="code-card__file">create-route.sh</span>
+                <button class="code-card__copy" data-copy="#hero-code" aria-label="Copy code to clipboard">
+                  <i class="bi bi-clipboard" aria-hidden="true"></i> Copy
+                </button>
+              </div>
+<pre id="hero-code"><code><span class="tok-comment"># Shift 10% of traffic to a canary</span>
+curl -X <span class="tok-method">POST</span> <span class="tok-url">https://api.divert.ly/v1/routes</span> \
+  <span class="tok-flag">-H</span> <span class="tok-str">"Authorization: Bearer $DIVERTLY_TOKEN"</span> \
+  <span class="tok-flag">-d</span> <span class="tok-str">'{
+    <span class="tok-key">"domain"</span>: "go.acme.dev",
+    <span class="tok-key">"path"</span>: "/launch",
+    <span class="tok-key">"targets"</span>: [
+      { "url": "https://app.acme.dev/v2", "weight": <span class="tok-num">90</span> },
+      { "url": "https://app.acme.dev/v3-canary", "weight": <span class="tok-num">10</span> }
+    ],
+    <span class="tok-key">"selection"</span>: "weighted"
+  }'</span></code></pre>
+            </div>
+            <p class="code-caption">Shift 10% of traffic to a canary. Ramp it — or roll it back — with one API call.</p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ===================== How a route works ===================== -->
+    <section class="section section--soft" id="how">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How a route works</span>
+          <h2>One route. Many targets. Your selection logic.</h2>
+          <p>A route is a domain and path you own. Instead of pointing it at a single URL, point it at as many targets as you want and choose how traffic is distributed — round-robin or weighted. The link in the wild never changes, only where it sends people.</p>
+        </div>
+
+        <div class="diagram-wrap reveal">
+          <div class="route-diagram">
+            <div class="node node--route">
+              <div class="node__label">Route</div>
+              <div class="node__value">go.acme.dev/launch</div>
+              <span class="node__pill"><i class="bi bi-code-slash" aria-hidden="true"></i> change by API</span>
+            </div>
+            <div class="arrow-col" aria-hidden="true"><i class="bi bi-arrow-right"></i></div>
+            <div class="node node--select">
+              <div class="node__label">Selection</div>
+              <div class="node__value">weighted</div>
+            </div>
+            <div class="arrow-col" aria-hidden="true"><i class="bi bi-arrow-right"></i></div>
+            <div class="targets">
+              <div class="node target">
+                <span class="node__value">/v2</span>
+                <span class="w">90%</span>
+              </div>
+              <div class="node target">
+                <span class="node__value">/v3-canary</span>
+                <span class="w">10%</span>
+              </div>
+            </div>
+          </div>
+          <p class="diagram-callout"><i class="bi bi-lightning-charge" aria-hidden="true"></i> Change the targets or weights anytime — by API or in the dashboard.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== What you can build ===================== -->
+    <section class="section" id="use-cases">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Use cases</span>
+          <h2>Built for routing, not just shortening.</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__icon"><i class="bi bi-rocket-takeoff" aria-hidden="true"></i></div>
+            <h3>Canary &amp; gradual cutover</h3>
+            <p>Send 10% of a link's traffic to a new endpoint, watch how it does, ramp to 100% — or roll back instantly by changing the weights. No redeploy.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><i class="bi bi-shield-check" aria-hidden="true"></i></div>
+            <h3>Automatic failover</h3>
+            <p>Route to a primary target and fall back to a backup when the primary is unhealthy, so a dead endpoint doesn't mean a dead link.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><i class="bi bi-hdd-network" aria-hidden="true"></i></div>
+            <h3>Release &amp; mirror distribution</h3>
+            <p>Spread downloads across mirrors or CDNs with weighted or round-robin selection, and repoint them after they're already out in the world.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><i class="bi bi-braces" aria-hidden="true"></i></div>
+            <h3>Links from your code</h3>
+            <p>Generate links programmatically — one per customer, per tenant, per record — with no cap on how many you create.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><i class="bi bi-bar-chart-steps" aria-hidden="true"></i></div>
+            <h3>Experiment routing</h3>
+            <p>Split traffic across destinations by weight and measure what each one does.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><i class="bi bi-arrow-left-right" aria-hidden="true"></i></div>
+            <h3>Provider migration</h3>
+            <p>Move traffic from one provider to another gradually and reversibly, just by shifting weights.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Why Divertly ===================== -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why Divertly</span>
+          <h2>Not a marketing tool. Not a DNS load balancer. Not another thing to self-host.</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-col reveal">
+            <h3><i class="bi bi-x-circle" aria-hidden="true"></i> Not a marketing link tool.</h3>
+            <p>Marketing shorteners bolt multi-destination routing on as a campaign feature and cap how many links you can make. Divertly treats routing as the core product: unlimited routes and targets, API-first, priced on traffic instead of per link.</p>
+          </div>
+          <div class="why-col reveal">
+            <h3><i class="bi bi-x-circle" aria-hidden="true"></i> Not a DNS load balancer.</h3>
+            <p>DNS and origin-layer products route infrastructure you already own, with health-checked origins and a cloud account to configure. Divertly routes any destination you can reach by URL, at the link layer — nothing to set up in a cloud console.</p>
+          </div>
+          <div class="why-col reveal">
+            <h3><i class="bi bi-x-circle" aria-hidden="true"></i> Not another thing to self-host.</h3>
+            <p>You could run this yourself on a worker or an open-source shortener — and then you'd own SSL, custom domains, abuse handling, uptime, and all the routing logic. Divertly is that, hosted, with an API.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Bring your own domain ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="byo">
+          <div class="byo__copy">
+            <span class="eyebrow">Bring your own domain</span>
+            <h2>Your domain, handled.</h2>
+            <p style="color:var(--muted);font-size:18px;margin-top:16px;">Have a domain for your links? Delegate its nameservers to Divertly and every subdomain and SSL certificate is provisioned automatically — no per-link records to add, nothing to renew. Prefer to keep DNS where it is? Point a CNAME at us instead. Either way, your links live on your brand, not ours.</p>
+            <ul class="byo__list">
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Instant subdomains on your delegated link domain.</li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Automatic wildcard SSL — nothing to provision or renew.</li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Keep DNS elsewhere with a plain CNAME if you prefer.</li>
+            </ul>
+          </div>
+          <div class="byo__panel reveal">
+            <div class="byo__step">
+              <span class="byo__num">1</span>
+              <div><strong>Add your link domain</strong><span>e.g. <code style="font-family:var(--mono);color:#56b6c2;">go.acme.dev</code></span></div>
+            </div>
+            <div class="byo__step">
+              <span class="byo__num">2</span>
+              <div><strong>Delegate nameservers — or point a CNAME</strong><span>Delegation gets you instant subdomains and wildcard SSL.</span></div>
+            </div>
+            <div class="byo__step">
+              <span class="byo__num">3</span>
+              <div><strong>Create routes on your brand</strong><span>Every subdomain and certificate, handled automatically.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Pricing ===================== -->
+    <section class="section section--soft" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pricing</span>
+          <h2>Unlimited routes and targets. Pay for traffic, not links.</h2>
+          <p>The API is on every plan — including free.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="plan">
+            <div class="plan__name">Free</div>
+            <div class="plan__price">$0</div>
+            <p class="plan__desc">For evaluation and non-critical traffic.</p>
+            <ul class="plan__features">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Shared <code style="font-family:var(--mono)">dvt.fyi</code> domain</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Round-robin + weighted routing</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Rate-limited API</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Generous monthly redirect allowance</li>
+            </ul>
+            <a class="btn btn-secondary" href="https://app.divert.ly/signup">Start free</a>
+          </div>
+
+          <div class="plan plan--featured">
+            <span class="plan__tag">Most popular</span>
+            <div class="plan__name">Dev</div>
+            <div class="plan__price">$20<span> / mo</span></div>
+            <p class="plan__desc">Your own domain, full API access.</p>
+            <ul class="plan__features">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Your own domain</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Full API rate limits</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Higher redirect allowance</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> 90-day analytics retention</li>
+            </ul>
+            <a class="btn btn-primary" href="https://app.divert.ly/signup">Start building</a>
+          </div>
+
+          <div class="plan">
+            <div class="plan__name">Team</div>
+            <div class="plan__price">$79<span> / mo</span></div>
+            <p class="plan__desc">Multiple domains and higher allowances.</p>
+            <ul class="plan__features">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Multiple domains</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Higher allowances</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> 1-year retention</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Priority support</li>
+            </ul>
+            <a class="btn btn-secondary" href="mailto:sales@divert.ly?subject=Divertly%20Team%20plan">Talk to us</a>
+          </div>
+
+          <div class="plan">
+            <div class="plan__name">Scale</div>
+            <div class="plan__price">Custom</div>
+            <p class="plan__desc">High committed redirect volume.</p>
+            <ul class="plan__features">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> High committed redirect volume</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Multi-year retention</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Dedicated support</li>
+            </ul>
+            <a class="btn btn-secondary" href="mailto:sales@divert.ly?subject=Divertly%20Scale%20plan">Talk to us</a>
+          </div>
+        </div>
+
+        <div class="enterprise-bar">
+          <div>
+            <h3>Custom / Enterprise</h3>
+            <p>Committed-use pricing · compliance · dedicated infrastructure.</p>
+          </div>
+          <a class="btn btn-primary" href="mailto:sales@divert.ly?subject=Divertly%20Enterprise">Contact sales</a>
+        </div>
+
+        <p class="pricing-note">No per-seat pricing. No link caps. Cancel anytime.</p>
+      </div>
+    </section>
+
+    <!-- ===================== For developers ===================== -->
+    <section class="section" id="developers">
+      <div class="container">
+        <div class="dev">
+          <div class="dev__copy">
+            <span class="eyebrow">For developers</span>
+            <h2>Everything the dashboard does, the API does.</h2>
+            <p style="color:var(--muted);font-size:18px;margin-top:16px;">Create routes, add targets, change weights, and read analytics from code. SDKs for Go, JavaScript, and Python, plus a plain HTTP API you can hit with curl.</p>
+            <div class="sdk-row">
+              <span class="sdk sdk--lead"><i class="bi bi-filetype-go" aria-hidden="true"></i> Go</span>
+              <span class="sdk"><i class="bi bi-filetype-js" aria-hidden="true"></i> JavaScript</span>
+              <span class="sdk"><i class="bi bi-filetype-py" aria-hidden="true"></i> Python</span>
+              <span class="sdk"><i class="bi bi-terminal" aria-hidden="true"></i> HTTP / curl</span>
+            </div>
+            <a class="btn btn-primary btn-lg" href="https://docs.divert.ly">Read the API docs <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="dev__code reveal">
+            <div class="code-card">
+              <div class="code-card__bar">
+                <span class="code-card__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="code-card__file">ramp-canary.sh</span>
+                <button class="code-card__copy" data-copy="#dev-code" aria-label="Copy code to clipboard">
+                  <i class="bi bi-clipboard" aria-hidden="true"></i> Copy
+                </button>
+              </div>
+<pre id="dev-code"><code><span class="tok-comment"># Ramp the canary from 10% to 50% — same route, no redeploy</span>
+curl -X <span class="tok-method">PATCH</span> <span class="tok-url">https://api.divert.ly/v1/routes/go.acme.dev/launch</span> \
+  <span class="tok-flag">-H</span> <span class="tok-str">"Authorization: Bearer $DIVERTLY_TOKEN"</span> \
+  <span class="tok-flag">-d</span> <span class="tok-str">'{
+    <span class="tok-key">"targets"</span>: [
+      { "url": "https://app.acme.dev/v2", "weight": <span class="tok-num">50</span> },
+      { "url": "https://app.acme.dev/v3-canary", "weight": <span class="tok-num">50</span> }
+    ]
+  }'</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Dashboard screenshot ===================== -->
+    <section class="section--tight">
+      <div class="container">
+        <img src="/images/screenshots/dashboard_framed.png"
+             alt="The Divertly dashboard showing a route with multiple weighted targets and traffic analytics."
+             loading="lazy" width="1341" height="595"
+             style="margin:0 auto;border-radius:14px;max-width:1000px;width:100%;">
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions a skeptical engineer asks.</h2>
+        </div>
+        <div class="faq">
+          <details class="faq__item">
+            <summary class="faq__q">Is Divertly production-ready? <i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+            <div class="faq__a"><p>Divertly runs its core routing path today and is a strong fit for evaluation and for traffic where a brief interruption is survivable. We're expanding our infrastructure and our reliability commitments as we grow — if you need a formal SLA, talk to us about timing.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">Why not just build this on Cloudflare Workers or nginx? <i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+            <div class="faq__a"><p>You can. The work isn't the redirect — it's everything around it: SSL provisioning, custom-domain handling, abuse and phishing mitigation, analytics, uptime, and the multi-target selection logic. Divertly is that infrastructure so you don't maintain it.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">How is this different from Bitly or Dub? <i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+            <div class="faq__a"><p>Bitly is a marketing link platform. Dub is excellent at link attribution and affiliate programs, billed on events. Divertly is about routing — weighting, failover, cutover — with simple usage-based pricing and no event billing to reason about.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">Do I have to move my DNS to you? <i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+            <div class="faq__a"><p>No. You can delegate a link domain's nameservers to us for the smoothest setup, or just point a CNAME at us and keep DNS where it is.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">How am I billed? <i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+            <div class="faq__a"><p>On redirects served, not on how many links you create. Routes and targets are unlimited; each plan includes a monthly redirect allowance.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">Is any of it open source? <i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+            <div class="faq__a"><p>Our supporting tools and our DNS server are open source. The core routing services are not.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">Can I export my data and leave? <i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+            <div class="faq__a"><p>Yes. Your routes are exportable, and a delegated domain is yours to point elsewhere at any time.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Final CTA ===================== -->
+    <section class="section final-cta">
+      <div class="container">
+        <h2>Start routing in five minutes.</h2>
+        <p>Free to start, API included, no link caps.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg" href="https://app.divert.ly/signup">Start free <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          <a class="btn btn-secondary btn-lg" href="https://docs.divert.ly">Read the docs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/images/branding/branding_dark.svg" alt="Divertly" width="120" height="26">
+          <p>Programmable link routing.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#use-cases">Use cases</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Bring your own domain</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Developers</h4>
+          <ul>
+            <li><a href="https://docs.divert.ly">API docs</a></li>
+            <li><a href="https://docs.divert.ly/sdks">SDKs</a></li>
+            <li><a href="https://github.com/divertly">Open source</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="mailto:hello@divert.ly">Contact</a></li>
+            <li><a href="/legal.html">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Divertly. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="/privacy-policy.html">Privacy</a>
+          <a href="/terms-of-service.html">Terms</a>
+          <a href="/legal.html">Legal</a>
+        </div>
+      </div>
     </div>
-    <nav class="navbar position-bottom bg-body-tertiary">
-        <div class="container-fluid justify-content-center">
-            <p class="mt-1">Made with love by</p>
-            <img class="footer-image d-flex align-items-center" src="images/logotype_lightbg_trans_padded_medium.png">
-        </div>
-    </nav>
+  </footer>
 
-
-
+  <script src="/js/main.js"></script>
 </body>
+</html>

@@ -1,1 +1,0 @@
-DOCS_timing['cov'] = new Date().getTime();
