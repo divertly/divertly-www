@@ -169,7 +169,101 @@
         }
 
         h1 .accent {
-            color: var(--teal);
+            background: linear-gradient(100deg, var(--teal-dark), var(--teal) 45%, var(--blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* ribbon */
+        .ribbon {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 12.5px;
+            letter-spacing: 0.04em;
+            color: var(--teal-dark);
+            background: var(--teal-tint);
+            border: 1px solid color-mix(in srgb, var(--teal) 40%, var(--line));
+            border-radius: 999px;
+            padding: 6px 14px 6px 10px;
+            margin: 0 0 22px;
+        }
+
+        .ribbon .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--teal);
+            animation: pulse-dot 1.6s ease-in-out infinite;
+            flex: none;
+        }
+
+        @keyframes pulse-dot {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 color-mix(in srgb, var(--teal) 55%, transparent);
+            }
+
+            50% {
+                box-shadow: 0 0 0 5px color-mix(in srgb, var(--teal) 0%, transparent);
+            }
+        }
+
+        /* seat tracker */
+        .seats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0 0 30px;
+        }
+
+        .seat {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            border: 1.5px solid color-mix(in srgb, var(--teal) 55%, var(--line));
+            background: var(--teal-tint);
+            color: var(--teal-dark);
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 13px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            animation: seat-in .5s ease forwards;
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+
+        .seat:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 14px -6px color-mix(in srgb, var(--teal) 50%, transparent);
+        }
+
+        @keyframes seat-in {
+            from {
+                opacity: 0;
+                transform: translateY(6px) scale(.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .seat {
+                opacity: 1;
+                animation: none;
+            }
+
+            .ribbon .dot {
+                animation: none;
+            }
         }
 
         .lede {
@@ -207,11 +301,38 @@
             background: var(--teal);
             color: #063A33;
             font-weight: 500;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 20px -8px color-mix(in srgb, var(--teal) 65%, transparent);
+        }
+
+        .btn-primary::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -60%;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(115deg, transparent, rgba(255, 255, 255, .55), transparent);
+            transform: skewX(-20deg);
+            animation: shine 3.2s ease-in-out infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                left: -60%;
+            }
+
+            35%,
+            100% {
+                left: 130%;
+            }
         }
 
         .btn-primary:hover {
             background: var(--teal-dark);
             transform: translateY(-1px);
+            box-shadow: 0 10px 24px -8px color-mix(in srgb, var(--teal) 75%, transparent);
         }
 
         .btn-ghost {
@@ -240,6 +361,21 @@
             flex: 1 1 200px;
             background: var(--surface);
             padding: 20px 22px;
+            border-top: 3px solid var(--teal);
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+
+        .cap-cell:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 22px -14px rgba(0, 0, 0, .25);
+        }
+
+        .cap-cell:nth-child(2) {
+            border-top-color: var(--blue);
+        }
+
+        .cap-cell:nth-child(3) {
+            border-top-color: var(--green);
         }
 
         .cap-num {
@@ -272,6 +408,18 @@
             text-transform: uppercase;
             color: var(--ink-faint);
             margin: 0 0 26px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .kicker::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 2px;
+            background: linear-gradient(135deg, var(--teal), var(--blue));
+            flex: none;
         }
 
         h2 {
@@ -301,14 +449,29 @@
         .cell {
             background: var(--surface);
             padding: 26px;
+            transition: transform .18s ease, box-shadow .18s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cell:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 30px -18px rgba(0, 0, 0, .3);
+            z-index: 2;
         }
 
         .cell .icon {
             width: 26px;
             height: 26px;
             color: var(--teal);
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 14px;
+            background: var(--teal-tint);
+            border-radius: 9px;
+            padding: 8px;
+            box-sizing: content-box;
         }
 
         .cell h3 {
@@ -409,6 +572,7 @@
         /* final */
         .final {
             text-align: center;
+            background: radial-gradient(ellipse at 50% 0%, var(--teal-tint), transparent 70%);
         }
 
         .final h2 {
@@ -488,12 +652,27 @@
         <!-- ===== HERO ===== -->
         <section class="hero" style="border-top:0;">
             <div class="wrap">
-                <p class="eyebrow">Launch week offer &middot; 10 spots, hard cap</p>
+                <div class="ribbon"><span class="dot"></span> Launch week only &middot; 10 spots, hard cap</div>
+                <p class="eyebrow">A limited promotion for early, paid accounts</p>
                 <h1>The <span class="accent">Founder's Circle.</span></h1>
                 <p class="lede">A one-time offer for ten Team-tier and above accounts signing up at launch: half off, for as long as you stay. In exchange, you help us shape the product and tell the first honest story about it.</p>
                 <div class="cta-row">
                     <a class="btn btn-primary" href="#request">Request a spot &rarr;</a>
                     <a class="btn btn-ghost" href="#terms">See eligibility</a>
+                </div>
+
+                <p class="methods-label" style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-faint); margin:36px 0 12px;">Ten seats in the Founder's Circle</p>
+                <div class="seats">
+                    <div class="seat" style="animation-delay:.02s">01</div>
+                    <div class="seat" style="animation-delay:.06s">02</div>
+                    <div class="seat" style="animation-delay:.10s">03</div>
+                    <div class="seat" style="animation-delay:.14s">04</div>
+                    <div class="seat" style="animation-delay:.18s">05</div>
+                    <div class="seat" style="animation-delay:.22s">06</div>
+                    <div class="seat" style="animation-delay:.26s">07</div>
+                    <div class="seat" style="animation-delay:.30s">08</div>
+                    <div class="seat" style="animation-delay:.34s">09</div>
+                    <div class="seat" style="animation-delay:.38s">10</div>
                 </div>
 
                 <div class="cap-strip">
