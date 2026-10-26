@@ -1,0 +1,99 @@
+---
+title: Why Divertly? — Divertly
+description: Divertly is routing infrastructure, not a marketing link tool, a DNS load balancer, or another service to self-host. Here's how it compares, honestly.
+---
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Why Divertly?</p>
+        <h1>Not a marketing tool. Not a DNS load balancer. <span class="accent">Not another thing to self-host.</span></h1>
+        <p class="lede">There are good tools near this problem. None of them treat link routing as the whole job. We do. That means unlimited routes and targets, an API on every plan, and a price that follows traffic.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://app.divert.ly/sign-up">Start free <i class="bi bi-arrow-right"></i></a>
+          <a class="btn btn-ghost" href="/pricing">See pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="grid three">
+          <div class="cell">
+            <i class="bi bi-megaphone bi-lg"></i>
+            <span class="mono">vs. marketing link tools</span>
+            <h3>Routing is the product</h3>
+            <p>Marketing shorteners bolt multi-destination routing on as a campaign feature and cap how many links you can make. Divertly has no link caps, an API on every plan, and pricing based on traffic.</p>
+          </div>
+          <div class="cell">
+            <i class="bi bi-hdd-network bi-lg"></i>
+            <span class="mono">vs. DNS &amp; load balancers</span>
+            <h3>Any URL you can reach</h3>
+            <p>DNS and origin-layer products route infrastructure you already own, and assume a cloud account and health-checked origins. Divertly routes any destination by URL, at the link layer. Nothing to configure in a cloud console.</p>
+          </div>
+          <div class="cell">
+            <i class="bi bi-server bi-lg"></i>
+            <span class="mono">vs. self-hosting</span>
+            <h3>The part you'd rather not run</h3>
+            <p>You can run this on a worker or an open-source shortener. Then you own SSL, custom domains, abuse handling, uptime, and the routing logic. Divertly is that, hosted, with an API.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="kicker">Side by side</p>
+        <h2 style="margin-bottom:22px;">How the alternatives differ.</h2>
+        <div class="cmp">
+          <div class="cmp-row head"><div class="cmp-cell">You might be using</div><div class="cmp-cell">What it is</div><div class="cmp-cell">How Divertly differs</div></div>
+          <div class="cmp-row">
+            <div class="cmp-cell who">Bitly, Short.io, Rebrandly</div>
+            <div class="cmp-cell">Marketing link platforms. Some offer A/B testing or rotation.</div>
+            <div class="cmp-cell">They treat multi-destination routing as a campaign feature, priced and capped per link. Divertly makes routing the core: <b>unlimited routes and targets</b>, API-first, priced on clicks.</div>
+          </div>
+          <div class="cmp-row">
+            <div class="cmp-cell who">Dub</div>
+            <div class="cmp-cell">Open-source link attribution and affiliate platform.</div>
+            <div class="cmp-cell">Dub's center of gravity is attribution and partner programs, billed on events. Divertly is about <b>routing</b>: weighting, targeting, cutover, with simple click-based pricing.</div>
+          </div>
+          <div class="cmp-row">
+            <div class="cmp-cell who">Route 53, Cloudflare Load Balancing</div>
+            <div class="cmp-cell">DNS and origin-layer traffic management.</div>
+            <div class="cmp-cell">They route infrastructure <b>you already own</b>. Divertly routes any URL, at the link layer, with your own link domain and no cloud account to set up.</div>
+          </div>
+          <div class="cmp-row">
+            <div class="cmp-cell who">Shlink, Cloudflare Workers</div>
+            <div class="cmp-cell">Self-hosted, or build-it-yourself.</div>
+            <div class="cmp-cell">Low cost to start, but you run it. You own SSL, domains, abuse handling, uptime, and the selection logic. Divertly is <b>hosted, with an API</b>.</div>
+          </div>
+        </div>
+        <p class="note">Based on each product's public positioning. Features and pricing change, so check the vendor before you decide. If we've got something wrong, tell us at support.divert.ly and we'll fix it.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <p class="kicker" style="margin-bottom:14px;">Honest answer</p>
+            <h2>Why not just build it yourself?</h2>
+            <p>You can, and plenty of good engineers have. The redirect is an afternoon. The rest is the job:</p>
+            <ul>
+              <li>SSL provisioning and renewal for every domain</li>
+              <li>Custom-domain handling and verification</li>
+              <li>Abuse and phishing mitigation</li>
+              <li>Analytics storage and retention</li>
+              <li>Uptime, and a pager for it</li>
+              <li>Multi-target selection logic</li>
+            </ul>
+          </div>
+          <div class="cell" style="border:1px solid var(--line); border-radius:var(--r); padding:30px;">
+            <span class="mono">what we won't claim</span>
+            <h3>We aren't the only one</h3>
+            <p>Several tools can route to more than one destination. What we offer is a different shape: routing as the core product, an API on every plan including Free, and pricing that follows traffic instead of link count.</p>
+            <p style="margin-top:12px;">We're also early. Divertly's core routing path runs today, and we're expanding our infrastructure and our reliability commitments as we grow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{{> cta heading="Compare it yourself." body="The Free plan includes the API, so you can build the same route here and in whatever you use today."}}

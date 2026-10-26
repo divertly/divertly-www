@@ -1,0 +1,35 @@
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap bar">
+      <a class="logo-lockup" href="/" aria-label="Divertly home">
+        <img src="/img/branding_light.svg" alt="Divertly" width="117" height="30" />
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><i class="bi bi-list"></i></button>
+      <nav id="site-nav" aria-label="Main">
+        <a class="nav-link{{active:platform}}" href="/platform">Platform</a>
+        <a class="nav-link{{active:solutions}}" href="/solutions">Solutions</a>
+        <a class="nav-link{{active:why-divertly}}" href="/why-divertly">Why Divertly?</a>
+        <a class="nav-link{{active:pricing}}" href="/pricing">Pricing</a>
+        <div class="dropdown">
+          <button class="nav-link dd-btn" aria-expanded="false" aria-haspopup="true">Resources <i class="bi bi-chevron-down"></i></button>
+          <div class="dd-menu">
+            <a href="https://docs.divert.ly">Documentation <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://support.divert.ly">Support <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="/report-abuse">Report abuse</a>
+            <a href="/circle">Founder's Circle</a>
+          </div>
+        </div>
+        <a class="nav-link{{active:about}}" href="/about">About Us</a>
+        <span class="nav-sep"></span>
+        <a class="nav-link login" href="https://app.divert.ly/login">Log in</a>
+        <a class="nav-cta primary" href="https://app.divert.ly/sign-up">Start free</a>
+      </nav>
+    </div>
+  </header>
+  <aside class="fc-banner" id="fc-banner" role="region" aria-label="Founder's Circle">
+    <script>try { if (localStorage.getItem("dvt-fc-banner") === "closed") document.getElementById("fc-banner").hidden = true; } catch (e) { }</script>
+    <div class="wrap fc-inner">
+      <p><span class="fc-pill"><span class="fc-dot"></span> Launch week</span> <b>The Founder's Circle:</b> <span class="fc-long">10 spots, 50% off for as long as you stay, on Team and above.</span><span class="fc-short">10 spots, 50% off for life.</span> <a href="/circle">See details <i class="bi bi-arrow-right"></i></a></p>
+      <button type="button" class="fc-close" id="fc-close" aria-label="Dismiss"><i class="bi bi-x-lg"></i></button>
+    </div>
+  </aside>

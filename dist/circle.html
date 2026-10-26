@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Divertly — The Founder's Circle</title>
+  <meta name="description" content="The Founder's Circle: 10 spots, 50% off for life, for Team-tier and above accounts to sign up at Divertly's launch." />
+  <link rel="canonical" href="https://divert.ly/circle" />
+  <meta property="og:title" content="Divertly — The Founder's Circle" />
+  <meta property="og:description" content="10 spots. 50% off, perpetually. For the first qualifying accounts at launch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://divert.ly/circle" />
+  <meta property="og:image" content="https://divert.ly/img/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="/img/arrow.svg" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/cal-sans-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/css/site.css" />
+  <style>
+    .ribbon { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: #067E70; background: var(--grad-soft); border-radius: 999px; padding: 7px 16px 7px 12px; margin: 0 0 22px; }
+    .ribbon .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse-dot 1.6s ease-in-out infinite; flex: none; }
+    @keyframes pulse-dot { 0%, 100% { box-shadow: 0 0 0 0 rgba(108,192,117,.55); } 50% { box-shadow: 0 0 0 6px rgba(108,192,117,0); } }
+    .seats { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+    .seat { width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--line); background: #fff; box-shadow: var(--shadow-sm); color: #067E70; font-size: 13px; font-weight: 600; display: flex; align-items: center; justify-content: center; opacity: 0; animation: seat-in .5s ease forwards; transition: transform .15s ease, box-shadow .15s ease; }
+    .seat:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    @keyframes seat-in { from { opacity: 0; transform: translateY(6px) scale(.9); } to { opacity: 1; transform: translateY(0) scale(1); } }
+    .cap-strip { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 18px; }
+    .cap-cell { flex: 1 1 200px; background: #fff; border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow-sm); padding: 22px 24px; transition: transform .15s ease, box-shadow .15s ease; }
+    .cap-cell:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .cap-num { font-family: var(--display); font-size: 34px; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .cap-label { font-size: 13px; font-weight: 600; color: var(--ink-faint); margin-top: 4px; }
+    .sub { color: var(--ink-soft); margin: 6px 0 26px; max-width: 40em; }
+    .terms { border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; background: #fff; box-shadow: var(--shadow-sm); }
+    .term-row { display: grid; grid-template-columns: 1fr 2fr; border-top: 1px solid var(--line); }
+    .term-row:first-child { border-top: 0; }
+    .term-cell { padding: 16px 20px; font-size: 15.5px; }
+    .term-cell.label { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint); background: var(--bg-soft); }
+    .term-cell.value b { color: #067E70; }
+    .caveat { display: flex; gap: 10px; align-items: flex-start; background: var(--grad-soft); border-radius: var(--r); padding: 16px 18px; margin: 20px 0 0; font-size: 15px; color: var(--ink-soft); }
+    .form-frame { border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; background: #fff; box-shadow: var(--shadow-sm); padding: 8px; }
+    .form-frame iframe { border: 0; width: 100%; display: block; }
+    @media (max-width: 760px) { .cap-strip { flex-direction: column; } .term-row { grid-template-columns: 1fr; } .term-cell.label { border-bottom: 1px solid var(--line); } }
+    @media (prefers-reduced-motion: reduce) { .seat { opacity: 1; animation: none; } .ribbon .dot { animation: none; } }
+  </style>
+
+</head>
+
+<body data-page="circle">
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap bar">
+      <a class="logo-lockup" href="/" aria-label="Divertly home">
+        <img src="/img/branding_light.svg" alt="Divertly" width="117" height="30" />
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><i class="bi bi-list"></i></button>
+      <nav id="site-nav" aria-label="Main">
+        <a class="nav-link" href="/platform">Platform</a>
+        <a class="nav-link" href="/solutions">Solutions</a>
+        <a class="nav-link" href="/why-divertly">Why Divertly?</a>
+        <a class="nav-link" href="/pricing">Pricing</a>
+        <div class="dropdown">
+          <button class="nav-link dd-btn" aria-expanded="false" aria-haspopup="true">Resources <i class="bi bi-chevron-down"></i></button>
+          <div class="dd-menu">
+            <a href="https://docs.divert.ly">Documentation <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://support.divert.ly">Support <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="/report-abuse">Report abuse</a>
+            <a href="/circle">Founder's Circle</a>
+          </div>
+        </div>
+        <a class="nav-link" href="/about">About Us</a>
+        <span class="nav-sep"></span>
+        <a class="nav-link login" href="https://app.divert.ly/login">Log in</a>
+        <a class="nav-cta primary" href="https://app.divert.ly/sign-up">Start free</a>
+      </nav>
+    </div>
+  </header>
+  <aside class="fc-banner" id="fc-banner" role="region" aria-label="Founder's Circle">
+    <script>try { if (localStorage.getItem("dvt-fc-banner") === "closed") document.getElementById("fc-banner").hidden = true; } catch (e) { }</script>
+    <div class="wrap fc-inner">
+      <p><span class="fc-pill"><span class="fc-dot"></span> Launch week</span> <b>The Founder's Circle:</b> <span class="fc-long">10 spots, 50% off for as long as you stay, on Team and above.</span><span class="fc-short">10 spots, 50% off for life.</span> <a href="/circle">See details <i class="bi bi-arrow-right"></i></a></p>
+      <button type="button" class="fc-close" id="fc-close" aria-label="Dismiss"><i class="bi bi-x-lg"></i></button>
+    </div>
+  </aside>
+
+  <main id="main">
+<!-- ===== HERO ===== -->
+<section class="hero" style="border-top:0;">
+    <div class="wrap">
+        <div class="ribbon"><span class="dot"></span> Launch week only &middot; 10 spots, hard cap</div>
+        <p class="eyebrow">A limited promotion for early, paid accounts</p>
+        <h1>The <span class="accent">Founder's Circle.</span></h1>
+        <p class="lede">A one-time offer for ten Team-tier and above accounts signing up at launch: half off, for as long as you stay. In exchange, you help us shape the product and tell the first honest story about it.</p>
+        <div class="cta-row">
+            <a class="btn btn-primary" href="#request">Request a spot &rarr;</a>
+            <a class="btn btn-ghost" href="#terms">See eligibility</a>
+        </div>
+
+        <p class="methods-label" style="margin:36px 0 12px;">Ten seats in the Founder's Circle</p>
+        <div class="seats">
+            <div class="seat" style="animation-delay:.02s">01</div>
+            <div class="seat" style="animation-delay:.06s">02</div>
+            <div class="seat" style="animation-delay:.10s">03</div>
+            <div class="seat" style="animation-delay:.14s">04</div>
+            <div class="seat" style="animation-delay:.18s">05</div>
+            <div class="seat" style="animation-delay:.22s">06</div>
+            <div class="seat" style="animation-delay:.26s">07</div>
+            <div class="seat" style="animation-delay:.30s">08</div>
+            <div class="seat" style="animation-delay:.34s">09</div>
+            <div class="seat" style="animation-delay:.38s">10</div>
+        </div>
+
+        <div class="cap-strip">
+            <div class="cap-cell">
+                <div class="cap-num">10</div>
+                <div class="cap-label">Spots total, hard cap</div>
+            </div>
+            <div class="cap-cell">
+                <div class="cap-num">50%</div>
+                <div class="cap-label">Off, perpetually</div>
+            </div>
+            <div class="cap-cell">
+                <div class="cap-num">Team+</div>
+                <div class="cap-label">Minimum eligible tier</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHAT YOU GET ===== -->
+<section>
+    <div class="wrap">
+        <p class="kicker">What's included</p>
+        <h2>More than a discount.</h2>
+        <p class="sub">Ten accounts get direct access to the team building Divertly, on top of the price lock.</p>
+        <div class="grid">
+            <div class="cell">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 16l5-5 3 3 8-8" />
+                    <path d="M16 6h5v5" />
+                </svg>
+                <span class="mono">pricing</span>
+                <h3>50% off, perpetually</h3>
+                <p>Half off your Team-tier (or above) plan for as long as your subscription stays active. Locked in at signup, not a launch-week teaser.</p>
+            </div>
+            <div class="cell">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.28-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span class="mono">onboarding</span>
+                <h3>A personal onboarding call</h3>
+                <p>Time with the team to get your domains, routes, and targets set up right the first time &mdash; not a generic walkthrough.</p>
+            </div>
+            <div class="cell">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+                <span class="mono">access</span>
+                <h3>A dedicated Slack channel</h3>
+                <p>Direct line to the people building Divertly &mdash; for questions, feature requests, and the occasional bug report that gets fixed fast.</p>
+            </div>
+            <div class="cell">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="14" rx="2" />
+                    <path d="M3 9h18" />
+                    <path d="M8 4v5" />
+                </svg>
+                <span class="mono">community</span>
+                <h3>The Founders Summit</h3>
+                <p>A video call (Zoom/Google Meet) with the other nine Founder's Circle accounts and the Divertly team &mdash; roadmap, feedback, and a look at what's next.</p>
+            </div>
+        </div>
+        <div class="cell" style="border:1px solid var(--line); border-radius:var(--r); margin-top:1px;">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 12v9H4v-9" />
+                <path d="M2 7h20v5H2z" />
+                <path d="M12 22V7" />
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+            </svg>
+            <span class="mono">swag</span>
+            <h3>A Founder's Circle box</h3>
+            <p>Physical swag, shipped to you &mdash; details to come as we finalize what's in the box.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ELIGIBILITY ===== -->
+<section id="terms">
+    <div class="wrap">
+        <p class="kicker">Eligibility &amp; terms</p>
+        <h2>Who qualifies.</h2>
+        <p class="sub">Straightforward rules, no fine print.</p>
+        <div class="terms">
+            <div class="term-row">
+                <div class="term-cell label">Cap</div>
+                <div class="term-cell value"><b>10 accounts</b>, hard limit. Once the tenth qualifying account signs up, the Founder's Circle closes.</div>
+            </div>
+            <div class="term-row">
+                <div class="term-cell label">Eligibility</div>
+                <div class="term-cell value">Paid subscription at the <b>Team tier or above</b>. Free and Dev-tier accounts don't qualify on their own, but you can upgrade to claim a spot.</div>
+            </div>
+            <div class="term-row">
+                <div class="term-cell label">Timing</div>
+                <div class="term-cell value">Sign up and qualify during <b>launch week</b>.</div>
+            </div>
+            <div class="term-row">
+                <div class="term-cell label">Discount</div>
+                <div class="term-cell value"><b>50% off</b> your plan's list price, for as long as your subscription stays active and in good standing.</div>
+            </div>
+            <div class="term-row">
+                <div class="term-cell label">Selection</div>
+                <div class="term-cell value">Who fills the 10 spots is <b>chosen by Divertly, at our discretion</b> &mdash; meeting the eligibility bar doesn't guarantee a spot.</div>
+            </div>
+        </div>
+        <div class="caveat">
+            <span style="font-family:'IBM Plex Mono',monospace;">&#9888;</span>
+            <span><b>This is a limited, one-time promotion.</b> It runs for launch week only and closes automatically at 10 accounts, whichever comes first.</span>
+        </div>
+        <div class="caveat">
+            <span style="font-family:'IBM Plex Mono',monospace;">&#9888;</span>
+            <span><b>Logo usage.</b> In exchange for program membership, we may ask Founder's Circle accounts for basic rights to use their logo (e.g. as a customer, on our site).</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== REQUEST FORM ===== -->
+<section id="request">
+    <div class="wrap">
+        <p class="kicker">Reserve your spot</p>
+        <h2>Tell us you're in.</h2>
+        <p class="sub">This is an early sign-up intent form &mdash; it doesn't finalize your spot, but it puts you in line and lets us reach out as soon as launch week opens.</p>
+        <div class="form-frame">
+            <iframe src="https://0c0925a6.sibforms.com/v2/serve/MUIFAHfFN-k5dwwoF0GmJ-3FDSEAF26MUAhbLJPfuBP7V64YraUbuEqHgOCy80ctOCvTs6o4Ck5hIr40O4EqVmhfZ5TISQxWItgH2XDnSYJEkrhyiU-sSqTlY_7zKEUJPjI6BW26-utPfeoQxO-LqBRaiVmrpFwuPawHdkcggLuCQMuCHUsUgahZkj2UT_e9g59ZNhDpzfl2MBcjMg==" loading="lazy" title="Founder's Circle request form" width="100%" height="100%" frameborder="0" scrolling="auto" allowfullscreen style="display:block; margin:0 auto; max-width:100%;"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final">
+    <div class="wrap">
+        <h2>10 spots. One launch week.</h2>
+        <p>Get your intent in early &mdash; we'll follow up the moment the Founder's Circle opens.</p>
+        <a class="btn btn-primary" href="#request">Request a spot &rarr;</a>
+    </div>
+</section>
+
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <img src="/img/branding_light.svg" alt="Divertly" width="88" height="22" />
+          <p>Programmable link routing.</p>
+          <a class="btn btn-primary btn-sm" href="https://app.divert.ly/sign-up">Start free</a>
+          <div class="foot-social">
+            <a href="https://www.linkedin.com/company/divertly" target="_blank" rel="noopener" aria-label="Divertly on LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://bsky.app/profile/divert.ly" target="_blank" rel="noopener" aria-label="Divertly on Bluesky"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="/platform">Platform</a>
+          <a href="/solutions">Solutions</a>
+          <a href="/why-divertly">Why Divertly?</a>
+          <a href="/pricing">Pricing</a>
+        </div>
+        <div>
+          <h4>Developers</h4>
+          <a href="https://docs.divert.ly">Documentation</a>
+          <a href="https://support.divert.ly">Support</a>
+          <a href="https://app.divert.ly/login">Log in</a>
+          <a href="https://app.divert.ly/sign-up">Sign up</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="/about">About us</a>
+          <a href="/circle">Founder's Circle</a>
+          <a href="/terms-of-service">Terms of Service</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/report-abuse">Report abuse</a>
+          <a href="#" data-cookie-settings>Cookie settings</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p class="copyright">&copy; 2026 Divertly. All rights reserved.</p>
+        <a class="status-badge" href="https://status.divert.ly?utm_source=status_badge&utm_medium=referral" target="_blank" rel="noopener"><img src="https://badge.uptimerobot.com/psp/334c55fa9390774732e8be0ca5481c89.svg?style=text&theme=light" alt="Divertly status" height="22" loading="lazy"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+  <script src="/js/consent.js" defer></script>
+
+</body>
+
+</html>

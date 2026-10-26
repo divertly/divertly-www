@@ -1,0 +1,10 @@
+{
+  "name": "divertly-www",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "serve": "node src/serve.mjs",
+    "dev": "node src/build.mjs && node src/serve.mjs"
+  }
+}
