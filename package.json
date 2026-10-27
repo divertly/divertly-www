@@ -3,8 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node src/build.mjs",
+    "build": "node src/build.mjs && npm run copy-pages",
+    "copy-pages": "cp legal.html dist/legal.html",
     "serve": "node src/serve.mjs",
-    "dev": "node src/build.mjs && node src/serve.mjs"
+    "dev": "npm run build && node src/serve.mjs"
   }
 }
