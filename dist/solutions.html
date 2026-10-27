@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solutions — Divertly</title>
+  <meta name="description" content="Real jobs for programmable link routing: gradual rollouts, regional and device targeting, mirror distribution, links generated from code, experiments, and provider migrations." />
+  <link rel="canonical" href="https://divert.ly/solutions" />
+  <meta property="og:title" content="Solutions — Divertly" />
+  <meta property="og:description" content="Real jobs for programmable link routing: gradual rollouts, regional and device targeting, mirror distribution, links generated from code, experiments, and provider migrations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://divert.ly/solutions" />
+  <meta property="og:site_name" content="Divertly" />
+  <meta property="og:image" content="https://divert.ly/img/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Divertly: Programmable link routing. One link, many destinations, controlled by API." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Solutions — Divertly" />
+  <meta name="twitter:description" content="Real jobs for programmable link routing: gradual rollouts, regional and device targeting, mirror distribution, links generated from code, experiments, and provider migrations." />
+  <meta name="twitter:image" content="https://divert.ly/img/og.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/arrow.svg" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/cal-sans-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/css/site.css" />
+
+</head>
+
+<body data-page="solutions">
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap bar">
+      <a class="logo-lockup" href="/" aria-label="Divertly home">
+        <img src="/img/branding_light.svg" alt="Divertly" width="117" height="30" />
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><i class="bi bi-list"></i></button>
+      <nav id="site-nav" aria-label="Main">
+        <a class="nav-link" href="/platform">Platform</a>
+        <a class="nav-link active" href="/solutions">Solutions</a>
+        <a class="nav-link" href="/why-divertly">Why Divertly?</a>
+        <a class="nav-link" href="/pricing">Pricing</a>
+        <div class="dropdown">
+          <button class="nav-link dd-btn" aria-expanded="false" aria-haspopup="true">Resources <i class="bi bi-chevron-down"></i></button>
+          <div class="dd-menu">
+            <a href="https://docs.divert.ly">Documentation <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://support.divert.ly">Support <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="/report-abuse">Report Abuse</a>
+            <a href="/circle">Founder's Circle</a>
+          </div>
+        </div>
+        <a class="nav-link" href="/about">About Us</a>
+        <span class="nav-sep"></span>
+        <a class="nav-link login" href="https://app.divert.ly/login">Log In</a>
+        <a class="nav-cta primary" href="https://app.divert.ly/sign-up">Start free</a>
+      </nav>
+    </div>
+  </header>
+  <aside class="fc-banner" id="fc-banner" role="region" aria-label="Founder's Circle">
+    <script>try { if (localStorage.getItem("dvt-fc-banner") === "closed") document.getElementById("fc-banner").hidden = true; } catch (e) { }</script>
+    <div class="wrap fc-inner">
+      <p><span class="fc-pill"><span class="fc-dot"></span> Launch week</span> <b>The Founder's Circle:</b> <span class="fc-long">10 spots, 50% off for as long as you stay, on Team and above.</span><span class="fc-short">10 spots, 50% off for life.</span> <a href="/circle">See details <i class="bi bi-arrow-right"></i></a></p>
+      <button type="button" class="fc-close" id="fc-close" aria-label="Dismiss"><i class="bi bi-x-lg"></i></button>
+    </div>
+  </aside>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Solutions</p>
+        <h1>The jobs people <span class="accent">hire it for.</span></h1>
+        <p class="lede">Every one of these starts the same way: a link that's already out there, and a destination that needs to change. Here's what that looks like, and what it saves.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://app.divert.ly/sign-up">Start free <i class="bi bi-arrow-right"></i></a>
+          <a class="btn btn-ghost" href="/platform">How the platform works</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tight-top" style="padding-top:0;">
+      <div class="wrap">
+
+        <div class="uc">
+          <div class="tagcol"><i class="bi bi-graph-up-arrow"></i><span class="mono">canary &amp; cutover</span></div>
+          <div>
+            <h3>Roll out gradually, roll back instantly</h3>
+            <dl>
+              <dt>Outcome</dt><dd><b>Smaller blast radius.</b> A bad release reaches 10% of traffic instead of all of it, and undoing it takes one API call.</dd>
+              <dt>The problem</dt><dd>Moving traffic to a new endpoint is all or nothing, and the destination may not be yours to put a load balancer in front of.</dd>
+              <dt>How it works</dt><dd>Point a route at both endpoints, weight them 90/10, and ramp as confidence grows. Change the weights by API or in the dashboard.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="uc">
+          <div class="tagcol"><i class="bi bi-globe-europe-africa"></i><span class="mono">targeting</span></div>
+          <div>
+            <h3>Send each visitor to the right place</h3>
+            <dl>
+              <dt>Outcome</dt><dd><b>One link, fewer wrong landings.</b> Print it, post it, or embed it once.</dd>
+              <dt>The problem</dt><dd>You publish a link to people on iPhones, Android phones, and desktops, in several countries and languages, and each needs a different destination.</dd>
+              <dt>How it works</dt><dd>Select the target by country, language, device, operating system, browser, header, or query parameter. Visitors who match nothing go to a default you choose. Available on paid plans.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="uc">
+          <div class="tagcol"><i class="bi bi-shuffle"></i><span class="mono">distribution</span></div>
+          <div>
+            <h3>Distribute releases across mirrors</h3>
+            <dl>
+              <dt>Outcome</dt><dd><b>No dead download links.</b> You can repoint a published link without shipping a new build.</dd>
+              <dt>The problem</dt><dd>Once a download URL is in a README, a package manifest, or an email, you can't change it.</dd>
+              <dt>How it works</dt><dd>Publish one Divertly link. Spread it across mirrors or CDNs with weighted or random selection, and change where it points whenever you need to.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="uc">
+          <div class="tagcol"><i class="bi bi-code-slash"></i><span class="mono">programmatic</span></div>
+          <div>
+            <h3>Generate links from your product</h3>
+            <dl>
+              <dt>Outcome</dt><dd><b>Per-customer links that don't hit a ceiling.</b> You pay for clicks, not for how many links exist.</dd>
+              <dt>The problem</dt><dd>Marketing link tools cap link counts and price per link. Building your own means owning SSL, abuse handling, and uptime.</dd>
+              <dt>How it works</dt><dd>Create routes from your application through the API: one per customer, per tenant, per record, on your own domain. Routes and targets are unlimited on every plan.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="uc">
+          <div class="tagcol"><i class="bi bi-intersect"></i><span class="mono">experiments</span></div>
+          <div>
+            <h3>Split traffic and measure what happens</h3>
+            <dl>
+              <dt>Outcome</dt><dd><b>Evidence before commitment.</b> You see what each destination does before you pick a winner.</dd>
+              <dt>The problem</dt><dd>You have two candidate destinations and no clean way to send each a share of the same link.</dd>
+              <dt>How it works</dt><dd>Weight the targets, send the link out, and read the click metrics per route.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="uc">
+          <div class="tagcol"><i class="bi bi-arrow-left-right"></i><span class="mono">migration</span></div>
+          <div>
+            <h3>Migrate between providers without a cliff</h3>
+            <dl>
+              <dt>Outcome</dt><dd><b>A reversible move.</b> If the new provider misbehaves, you shift the weight back.</dd>
+              <dt>The problem</dt><dd>Cutting every link over to a new provider at once puts the whole migration on one bet.</dd>
+              <dt>How it works</dt><dd>Move traffic from the old destination to the new one gradually by shifting target weights. Nothing about the destinations has to change.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="uc">
+          <div class="tagcol"><i class="bi bi-link-45deg"></i><span class="mono">branded links</span></div>
+          <div>
+            <h3>Run branded links on your own domain</h3>
+            <dl>
+              <dt>Outcome</dt><dd><b>Links that look like yours.</b> Customers see your brand, not ours.</dd>
+              <dt>The problem</dt><dd>Registrar fiddling, certificates, and DNS work for every campaign or customer.</dd>
+              <dt>How it works</dt><dd>Point a CNAME from your link domain and verify it. Full nameserver delegation is coming soon.</dd>
+            </dl>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Pick one and try it free.</h2>
+        <p>Weighted and random routing are on the Free plan, so most of this works on day one.</p>
+        <div class="cta-row center">
+          <a class="btn btn-primary" href="https://app.divert.ly/sign-up">Start free <i class="bi bi-arrow-right"></i></a>
+          <a class="btn btn-ghost" href="https://docs.divert.ly">Read the docs</a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <img src="/img/branding_light.svg" alt="Divertly" width="88" height="22" />
+          <p>Programmable link routing.</p>
+          <a class="btn btn-primary btn-sm" href="https://app.divert.ly/sign-up">Start free</a>
+          <div class="foot-social">
+            <a href="https://www.linkedin.com/company/divertly" target="_blank" rel="noopener" aria-label="Divertly on LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://bsky.app/profile/divert.ly" target="_blank" rel="noopener" aria-label="Divertly on Bluesky"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="/platform">Platform</a>
+          <a href="/solutions">Solutions</a>
+          <a href="/why-divertly">Why Divertly?</a>
+          <a href="/pricing">Pricing</a>
+        </div>
+        <div>
+          <h4>Developers</h4>
+          <a href="https://docs.divert.ly">Documentation</a>
+          <a href="https://support.divert.ly">Support</a>
+          <a href="https://app.divert.ly/login">Log In</a>
+          <a href="https://app.divert.ly/sign-up">Sign Up</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="/about">About Us</a>
+          <a href="/circle">Founder's Circle</a>
+          <a href="/terms-of-service">Terms of Service</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/report-abuse">Report Abuse</a>
+          <a href="#" data-cookie-settings>Cookie Settings</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p class="copyright">&copy; 2026 Divertly. All rights reserved.</p>
+        <a class="status-badge" href="https://status.divert.ly?utm_source=status_badge&utm_medium=referral" target="_blank" rel="noopener"><img src="https://badge.uptimerobot.com/psp/334c55fa9390774732e8be0ca5481c89.svg?style=text&theme=light" alt="Divertly status" height="22" loading="lazy"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+  <script src="/js/consent.js" defer></script>
+
+</body>
+
+</html>

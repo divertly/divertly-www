@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Divertly — Programmable link routing</title>
+  <meta name="description" content="Point one short link at many destinations. Weight traffic, route by country, device, or header, and change it all by API. On your own domain, with no link caps. Free to start." />
+  <link rel="canonical" href="https://divert.ly/" />
+  <meta property="og:title" content="Divertly — Programmable link routing" />
+  <meta property="og:description" content="Programmable link routing. One link, many destinations, controlled by API." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://divert.ly/" />
+  <meta property="og:site_name" content="Divertly" />
+  <meta property="og:image" content="https://divert.ly/img/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Divertly: Programmable link routing. One link, many destinations, controlled by API." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Divertly — Programmable link routing" />
+  <meta name="twitter:description" content="Programmable link routing. One link, many destinations, controlled by API." />
+  <meta name="twitter:image" content="https://divert.ly/img/og.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/arrow.svg" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/cal-sans-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/css/site.css" />
+
+</head>
+
+<body data-page="index">
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap bar">
+      <a class="logo-lockup" href="/" aria-label="Divertly home">
+        <img src="/img/branding_light.svg" alt="Divertly" width="117" height="30" />
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><i class="bi bi-list"></i></button>
+      <nav id="site-nav" aria-label="Main">
+        <a class="nav-link" href="/platform">Platform</a>
+        <a class="nav-link" href="/solutions">Solutions</a>
+        <a class="nav-link" href="/why-divertly">Why Divertly?</a>
+        <a class="nav-link" href="/pricing">Pricing</a>
+        <div class="dropdown">
+          <button class="nav-link dd-btn" aria-expanded="false" aria-haspopup="true">Resources <i class="bi bi-chevron-down"></i></button>
+          <div class="dd-menu">
+            <a href="https://docs.divert.ly">Documentation <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://support.divert.ly">Support <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="/report-abuse">Report Abuse</a>
+            <a href="/circle">Founder's Circle</a>
+          </div>
+        </div>
+        <a class="nav-link" href="/about">About Us</a>
+        <span class="nav-sep"></span>
+        <a class="nav-link login" href="https://app.divert.ly/login">Log In</a>
+        <a class="nav-cta primary" href="https://app.divert.ly/sign-up">Start free</a>
+      </nav>
+    </div>
+  </header>
+  <aside class="fc-banner" id="fc-banner" role="region" aria-label="Founder's Circle">
+    <script>try { if (localStorage.getItem("dvt-fc-banner") === "closed") document.getElementById("fc-banner").hidden = true; } catch (e) { }</script>
+    <div class="wrap fc-inner">
+      <p><span class="fc-pill"><span class="fc-dot"></span> Launch week</span> <b>The Founder's Circle:</b> <span class="fc-long">10 spots, 50% off for as long as you stay, on Team and above.</span><span class="fc-short">10 spots, 50% off for life.</span> <a href="/circle">See details <i class="bi bi-arrow-right"></i></a></p>
+      <button type="button" class="fc-close" id="fc-close" aria-label="Dismiss"><i class="bi bi-x-lg"></i></button>
+    </div>
+  </aside>
+
+  <main id="main">
+    <!-- ===== HERO (CTA 1) ===== -->
+    <section class="hero" style="border-top:0;">
+      <div class="wrap">
+        <p class="eyebrow">Routing infrastructure for links</p>
+        <h1>Programmable <span class="accent">link routing.</span></h1>
+        <p class="lede">Point one short link at many destinations. Weight them, split them by country or device, and change them by API. All on your own domain, with no cap on links.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://app.divert.ly/sign-up">Start free <i class="bi bi-arrow-right"></i></a>
+          <a class="btn btn-ghost" href="https://docs.divert.ly">Read the API docs</a>
+        </div>
+        <p class="snippet-note" style="margin-top:14px;">Free plan: 5,000 clicks a month, API included, no credit card.</p>
+
+        <div class="code-card">
+          <div class="snippet">
+            <div class="snippet-head"><i></i><i></i><i></i><span>shift-traffic.sh</span></div>
+<pre><span class="cmt"># Send 10% of go.acme.dev/launch to a canary</span>
+curl -X POST https://api.divert.ly/v1/domains/$DOMAIN_ID/routes/$ROUTE_ID/targets \
+  -H <span class="tk">"Authorization: Key $DIVERTLY_KEY"</span> \
+  -H "Content-Type: application/json" \
+  -d '{
+    "url": "https://app.acme.dev/v3-canary",
+    "weight": 10
+  }'</pre>
+          </div>
+          <p class="snippet-note">// Ramp it to 50%, or roll it back to 0, with one more call. No redeploy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHO USES IT ===== -->
+    <section>
+      <div class="wrap">
+        <p class="kicker">Who uses it</p>
+        <h2>Built for people who ship.</h2>
+        <p class="muted narrow" style="margin:6px 0 26px;">If you've ever hand-rolled a redirect, bent a load balancer into doing it, or hit a link cap on a marketing tool, this is the replacement.</p>
+        <div class="grid three">
+          <div class="cell">
+            <i class="bi bi-diagram-3 bi-lg"></i>
+            <span class="mono">platform &amp; devops</span>
+            <h3>Shift traffic without a deploy</h3>
+            <p>Send a slice of traffic to a new endpoint, watch it, and ramp or roll back by changing weights. Works for destinations you don't own, too.</p>
+          </div>
+          <div class="cell">
+            <i class="bi bi-braces bi-lg"></i>
+            <span class="mono">product engineers</span>
+            <h3>Create links from your code</h3>
+            <p>One link per customer, per tenant, per record. The API does everything the dashboard does, and nothing stops at a link count.</p>
+          </div>
+          <div class="cell">
+            <i class="bi bi-rocket-takeoff bi-lg"></i>
+            <span class="mono">technical founders</span>
+            <h3>Skip the infrastructure</h3>
+            <p>SSL, custom domains, and abuse handling are done. Try it on the Free plan, move to your own domain when you're ready.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== USE CASES ===== -->
+    <section>
+      <div class="wrap">
+        <p class="kicker">What you can build</p>
+        <h2>Routing, not just shortening.</h2>
+        <p class="muted narrow" style="margin:6px 0 0;">Pick how a link chooses its target and watch the route change.</p>
+        <div class="diagram">
+          <svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Routing diagram: one link distributed to two targets by the selected method">
+            <path id="d-flow1" class="flow flow-heavy animate" d="M 300 150 C 380 150, 400 92, 560 92" />
+            <path id="d-flow2" class="flow flow-light animate" d="M 300 150 C 380 150, 400 214, 560 214" />
+
+            <rect class="node-box src" x="40" y="118" width="230" height="64" rx="9" />
+            <text class="node-label" x="60" y="145">go.acme.dev</text>
+            <text class="node-sub" x="60" y="165">/launch</text>
+
+            <circle class="hub" cx="300" cy="150" r="20" />
+            <text id="d-hub" class="hub-label" x="300" y="200" text-anchor="middle">weighted</text>
+
+            <rect id="d-box1" class="node-box hot" x="560" y="60" width="300" height="64" rx="9" />
+            <text id="d-t1-dest" class="node-label" x="580" y="88">app.acme.dev/v2</text>
+            <text id="d-t1-cond" class="weight" x="580" y="109">weight 90</text>
+
+            <rect id="d-box2" class="node-box" x="560" y="186" width="300" height="60" rx="9" />
+            <text id="d-t2-dest" class="node-label" x="580" y="212">app.acme.dev/v3-canary</text>
+            <text id="d-t2-cond" class="weight weight-lo" x="580" y="232">weight 10</text>
+          </svg>
+        </div>
+
+        <div class="methods">
+          <p class="methods-label">Select a target by <span style="text-transform:none; letter-spacing:0; color:var(--ink-faint);">· hover to preview</span></p>
+          <div class="chips" id="method-chips">
+            <button class="chip active" data-method="weighted">weighted</button>
+            <button class="chip" data-method="random">random</button>
+            <button class="chip" data-method="country" data-locked title="Paid plans">country <i class="bi bi-lock-fill" aria-label="paid plans"></i></button>
+            <button class="chip" data-method="device" data-locked title="Paid plans">device type <i class="bi bi-lock-fill" aria-label="paid plans"></i></button>
+            <button class="chip" data-method="browser" data-locked title="Paid plans">browser type <i class="bi bi-lock-fill" aria-label="paid plans"></i></button>
+            <button class="chip" data-method="os" data-locked title="Paid plans">operating system <i class="bi bi-lock-fill" aria-label="paid plans"></i></button>
+            <button class="chip" data-method="language" data-locked title="Paid plans">language <i class="bi bi-lock-fill" aria-label="paid plans"></i></button>
+            <button class="chip" data-method="header" data-locked title="Paid plans">HTTP header <i class="bi bi-lock-fill" aria-label="paid plans"></i></button>
+            <button class="chip" data-method="query" data-locked title="Paid plans">query parameter <i class="bi bi-lock-fill" aria-label="paid plans"></i></button>
+            <button class="chip" data-method="ua" data-locked title="Paid plans">user agent <i class="bi bi-lock-fill" aria-label="paid plans"></i></button>
+            <button class="chip" data-method="human" data-locked title="Paid plans">human vs bot <i class="bi bi-lock-fill" aria-label="paid plans"></i></button>
+            <button class="chip" data-method="cidr" data-locked title="Paid plans">CIDR range <i class="bi bi-lock-fill" aria-label="paid plans"></i></button>
+          </div>
+          <p class="snippet-note" style="margin-top:14px;">Weighted and random are on every plan, Free included. The rest unlock on paid plans.</p>
+        </div>
+        <div class="grid" style="margin-top:44px;">
+          <div class="cell">
+            <i class="bi bi-graph-up-arrow bi-lg"></i>
+            <span class="mono">canary &amp; cutover</span>
+            <h3>Ship gradually</h3>
+            <p>Send 10% of a link's traffic to a new endpoint, then ramp to 100%. Roll back by changing the weights. No redeploy.</p>
+          </div>
+          <div class="cell">
+            <i class="bi bi-globe-europe-africa bi-lg"></i>
+            <span class="mono">targeting</span>
+            <h3>Send people where they belong</h3>
+            <p>Route by country, language, device, operating system, or any HTTP header. One link in the wild, the right destination for each visitor.</p>
+          </div>
+          <div class="cell">
+            <i class="bi bi-shuffle bi-lg"></i>
+            <span class="mono">distribution</span>
+            <h3>Split and mirror</h3>
+            <p>Spread downloads across mirrors or CDNs, or run an experiment across destinations. Repoint it after the link is already out in the world.</p>
+          </div>
+          <div class="cell">
+            <i class="bi bi-code-slash bi-lg"></i>
+            <span class="mono">programmatic</span>
+            <h3>Links from your code</h3>
+            <p>Generate routes straight from the API, with no cap on how many you create.</p>
+          </div>
+        </div>
+        <p style="margin:22px 0 0;"><a class="btn btn-ghost" href="/solutions">See all use cases <i class="bi bi-arrow-right"></i></a></p>
+      </div>
+    </section>
+
+    <!-- ===== CTA 2 (midpoint) ===== -->
+    <section class="cta-band cta-mid">
+      <div class="wrap">
+        <h2>Free is a real plan.</h2>
+        <p>5,000 clicks a month, weighted and random routing, and the full API. No credit card, and you can upgrade when the traffic does.</p>
+        <div class="cta-row center">
+          <a class="btn btn-primary" href="https://app.divert.ly/sign-up">Start free <i class="bi bi-arrow-right"></i></a>
+          <a class="btn btn-ghost" href="/pricing">See pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BYO DOMAIN ===== -->
+    <section>
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <p class="kicker" style="margin-bottom:14px;">Bring your own domain</p>
+            <h2>Your domain, handled.</h2>
+            <p>Add your link domain, add two DNS records (a CNAME that points at us and a TXT record that proves you own it), and verify. DNS stays where it is, and your links live on your brand. Full nameserver delegation is coming soon.</p>
+            <ul>
+              <li>Automatic SSL, nothing to renew</li>
+              <li>Ownership verified, and re-verified over time</li>
+              <li>Your links live on your brand, not ours</li>
+            </ul>
+          </div>
+          <figure class="shot"><img src="/img/screens/verify-domain.png" alt="The Verify Domain dialog in the Divertly dashboard, showing the CNAME record and TXT record to add with your DNS provider." width="505" height="519" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEVELOPERS ===== -->
+    <section>
+      <div class="wrap">
+        <p class="kicker">For developers</p>
+        <h2>Everything the dashboard does, the API does.</h2>
+        <p class="dev-sub">Create routes, add targets, and change weights from code. It's plain HTTP, so it works with curl today. Official SDKs for Go, Python, and JavaScript are coming soon.</p>
+        <div class="dev-chips" id="lang-chips">
+          <button class="chip lang active" data-sample="create">Create a route</button>
+          <button class="chip lang" data-sample="target">Add targets</button>
+          <button class="chip lang" data-sample="ramp">Ramp the canary</button>
+          <button class="chip" disabled>Go <span class="soon">soon</span></button>
+          <button class="chip" disabled>Python <span class="soon">soon</span></button>
+          <button class="chip" disabled>JavaScript <span class="soon">soon</span></button>
+        </div>
+        <div class="snippet">
+          <pre id="code"><span class="cmt"># 1. Create a weighted route on a domain you've added</span>
+curl -X POST https://api.divert.ly/v1/domains/$DOMAIN_ID/routes \
+  -H <span class="tk">"Authorization: Key $DIVERTLY_KEY"</span> \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nickname": "Launch",
+    "slug": "launch",
+    "targetStrategy": "weighted"
+  }'</pre>
+        </div>
+        <template data-sample="create"><span class="cmt"># 1. Create a weighted route on a domain you've added</span>
+curl -X POST https://api.divert.ly/v1/domains/$DOMAIN_ID/routes \
+  -H <span class="tk">"Authorization: Key $DIVERTLY_KEY"</span> \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nickname": "Launch",
+    "slug": "launch",
+    "targetStrategy": "weighted"
+  }'</template>
+        <template data-sample="target"><span class="cmt"># 2. Add targets. 90% to v2, 10% to the canary</span>
+curl -X POST https://api.divert.ly/v1/domains/$DOMAIN_ID/routes/$ROUTE_ID/targets \
+  -H <span class="tk">"Authorization: Key $DIVERTLY_KEY"</span> \
+  -H "Content-Type: application/json" \
+  -d '{ "url": "https://app.acme.dev/v2", "weight": 90 }'
+
+curl -X POST https://api.divert.ly/v1/domains/$DOMAIN_ID/routes/$ROUTE_ID/targets \
+  -H <span class="tk">"Authorization: Key $DIVERTLY_KEY"</span> \
+  -H "Content-Type: application/json" \
+  -d '{ "url": "https://app.acme.dev/v3-canary", "weight": 10 }'</template>
+        <template data-sample="ramp"><span class="cmt"># 3. Ramp the canary to 50%. Same route, no redeploy</span>
+curl -X PUT https://api.divert.ly/v1/domains/$DOMAIN_ID/routes/$ROUTE_ID/targets/$CANARY_ID \
+  -H <span class="tk">"Authorization: Key $DIVERTLY_KEY"</span> \
+  -H "Content-Type: application/json" \
+  -d '{ "weight": 50 }'</template>
+        <p class="snippet-note">// Create a route at <code>go.acme.dev/launch</code>, then change where it sends people with a PUT.</p>
+        <p style="margin:22px 0 0;"><a class="btn btn-ghost" href="https://docs.divert.ly">Read the API docs <i class="bi bi-box-arrow-up-right"></i></a></p>
+      </div>
+    </section>
+
+    <!-- ===== PRICING TEASER ===== -->
+    <section id="pricing">
+      <div class="wrap">
+        <p class="kicker">Pricing</p>
+        <h2>Pay for traffic, not links.</h2>
+        <p class="muted narrow" style="margin:6px 0 26px;">Unlimited routes and targets on every plan. The API is included everywhere, Free too.</p>
+        <div class="split" style="gap:30px; align-items:stretch;">
+          <div class="plan-card featured" style="padding:30px;">
+            <span class="badge">Start here</span>
+            <h3>Free</h3>
+            <div class="amt">$0 <small>/mo</small></div>
+            <div class="vol">5,000 clicks / month</div>
+            <ul>
+              <li>Shared <code>dvt.fyi</code> domain</li>
+              <li>Weighted and random routing</li>
+              <li>API at 90 requests/min</li>
+              <li>Unlimited routes and targets</li>
+            </ul>
+            <a class="btn btn-primary" href="https://app.divert.ly/sign-up">Start free <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div style="display:flex; flex-direction:column; justify-content:center;">
+            <p class="muted" style="margin-top:0;">Need your own domain, more routing methods, or more traffic? Paid plans start at <b style="color:var(--ink)">$23 a month</b> and go up to 1.5 million clicks.</p>
+            <p class="muted">Go past your allowance and overage is $1.50 per 1,000 clicks. No per-seat pricing, no link caps.</p>
+            <p style="margin:6px 0 0;"><a class="btn btn-ghost" href="/pricing">Compare all plans <i class="bi bi-arrow-right"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section>
+      <div class="wrap faq">
+        <p class="kicker">Questions</p>
+        <h2 style="margin-bottom:22px;">What engineers ask first.</h2>
+        <details>
+          <summary>Is it reliable?</summary>
+          <p>We strive to maintain a reliability SLO of 99.8% or better, but don't take our word for it. View our historic reliability data on our <a href="https://status.divert.ly">status page</a>.</p>
+        </details>
+        <details>
+          <summary>Why not just build this on Cloudflare Workers or nginx?</summary>
+          <p>You can. The redirect is the easy part. The work is everything around it: SSL provisioning, custom-domain handling, abuse and phishing mitigation, analytics, uptime, and the multi-target selection logic. Divertly is that infrastructure, so you don't maintain it.</p>
+        </details>
+        <details>
+          <summary>Do I have to move my DNS to you?</summary>
+          <p>No. Point a CNAME at us and keep DNS where it is. Full nameserver delegation is coming soon.</p>
+        </details>
+        <details>
+          <summary>How am I billed?</summary>
+          <p>On clicks served, not on how many links you create. <a href="/pricing">See pricing</a>.</p>
+        </details>
+        <details>
+          <summary>Can I export my data?</summary>
+          <p>Yes. We'll export your data on request. <a href="https://support.divert.ly">Contact support to request an export.</a></p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== CTA 3 (bottom) ===== -->
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Start routing in five minutes.</h2>
+        <p>Free to start, API included, no link caps.</p>
+        <div class="cta-row center">
+          <a class="btn btn-primary" href="https://app.divert.ly/sign-up">Start free <i class="bi bi-arrow-right"></i></a>
+          <a class="btn btn-ghost" href="https://docs.divert.ly">Read the docs</a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <img src="/img/branding_light.svg" alt="Divertly" width="88" height="22" />
+          <p>Programmable link routing.</p>
+          <a class="btn btn-primary btn-sm" href="https://app.divert.ly/sign-up">Start free</a>
+          <div class="foot-social">
+            <a href="https://www.linkedin.com/company/divertly" target="_blank" rel="noopener" aria-label="Divertly on LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://bsky.app/profile/divert.ly" target="_blank" rel="noopener" aria-label="Divertly on Bluesky"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="/platform">Platform</a>
+          <a href="/solutions">Solutions</a>
+          <a href="/why-divertly">Why Divertly?</a>
+          <a href="/pricing">Pricing</a>
+        </div>
+        <div>
+          <h4>Developers</h4>
+          <a href="https://docs.divert.ly">Documentation</a>
+          <a href="https://support.divert.ly">Support</a>
+          <a href="https://app.divert.ly/login">Log In</a>
+          <a href="https://app.divert.ly/sign-up">Sign Up</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="/about">About Us</a>
+          <a href="/circle">Founder's Circle</a>
+          <a href="/terms-of-service">Terms of Service</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/report-abuse">Report Abuse</a>
+          <a href="#" data-cookie-settings>Cookie Settings</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p class="copyright">&copy; 2026 Divertly. All rights reserved.</p>
+        <a class="status-badge" href="https://status.divert.ly?utm_source=status_badge&utm_medium=referral" target="_blank" rel="noopener"><img src="https://badge.uptimerobot.com/psp/334c55fa9390774732e8be0ca5481c89.svg?style=text&theme=light" alt="Divertly status" height="22" loading="lazy"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+  <script src="/js/consent.js" defer></script>
+
+</body>
+
+</html>
