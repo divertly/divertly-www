@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node src/build.mjs && npm run copy-pages",
-    "copy-pages": "cp legal.html dist/legal.html && cp terms-of-service.html dist/terms-of-service.html",
+    "copy-pages": "cp legal.html dist/legal.html && cp terms-of-service.html dist/terms-of-service.html && cp privacy-policy.html dist/privacy-policy.html",
     "serve": "node src/serve.mjs",
     "dev": "npm run build && node src/serve.mjs"
   }
